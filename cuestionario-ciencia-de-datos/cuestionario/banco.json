@@ -1,0 +1,7023 @@
+{
+  "schemaVersion": 1,
+  "title": "Ciencia de Datos · Preparación del parcial",
+  "sources": [
+    {
+      "id": "gestion",
+      "title": "CD_01_Introduccion_Gestion_de_Proyectos.pdf",
+      "url": "https://drive.google.com/file/d/1Q2Mc3DlGtr3YT9yCh-0ukeWtHF224CD_/view"
+    },
+    {
+      "id": "ml",
+      "title": "CD_01_Aprendizaje Automatico.pdf",
+      "url": "https://drive.google.com/file/d/18MNOGsN5x3jgVhJLRv--uhYXSCjfxy1Z/view"
+    },
+    {
+      "id": "etl",
+      "title": "CD_02_02_ETL.pdf",
+      "url": "https://drive.google.com/file/d/1PTaAywUgP9FuM3p65z-MPym48R44WEFm/view"
+    },
+    {
+      "id": "prep",
+      "title": "CD_02_03_Preprocesamiento.pdf",
+      "url": "https://drive.google.com/file/d/18wmKHzjBF6nSgI5hzZ1qVu3PXjHcJdJh/view"
+    },
+    {
+      "id": "log",
+      "title": "CD_04_02_01_RegresionLogistica.pdf",
+      "url": "https://drive.google.com/file/d/1lEEQTASHrZbanMADS90DrAxqCUFd37JJ/view"
+    },
+    {
+      "id": "met",
+      "title": "CD_04_02_02_Metricas.pdf",
+      "url": "https://drive.google.com/file/d/1N5IR90ywUc-ZAQSWeTUKOAdX3A-tj_CN/view"
+    },
+    {
+      "id": "tree",
+      "title": "CD_04_02_03_ArbolesDeDecision.pdf",
+      "url": "https://drive.google.com/file/d/1jp7xRJwjjearDt4wINU_zjgsZ8Z7Tdbn/view"
+    },
+    {
+      "id": "multi",
+      "title": "CD_04_02_04_ClasificacionMulticlase.pdf",
+      "url": "https://drive.google.com/file/d/1yVG8G-waJ8Wp0HP3fZqeXBl_SnGfBerR/view"
+    },
+    {
+      "id": "knn",
+      "title": "CD_04_02_05_KNN.pdf",
+      "url": "https://drive.google.com/file/d/1gq854mDIDiNQxhcDkhVW3TeFpljyaN2E/view"
+    },
+    {
+      "id": "unsup",
+      "title": "CD_04_03_AprendizajeNoSupervisado.pdf",
+      "url": "https://drive.google.com/file/d/1ggjyc_ilPjGPbBaDP6HVjgK24mx05MNP/view"
+    },
+    {
+      "id": "dds",
+      "title": "Achieving Lean Data Science Agility Via Data Driven Scrum_0711.pdf",
+      "url": "https://drive.google.com/file/d/1jcUul1XTEpsVUjJBjfWEKbnJDWuyoffk/view"
+    },
+    {
+      "id": "res",
+      "title": "RESUMEN CIENCIA DE DATOS.pdf",
+      "url": "https://drive.google.com/file/d/1IwpAEpBqh8LKL3yi9CkQRcSrl86SgeZn/view"
+    },
+    {
+      "id": "parcial",
+      "title": "parcial primer cuatri.pdf",
+      "url": "https://drive.google.com/file/d/17jbLE39cjGoVKGIIJGqZ_cvASwcRCI8X/view"
+    },
+    {
+      "id": "experto",
+      "title": "Evaluación Formativa 24/04/2026 - Visita de Experto",
+      "url": "https://drive.google.com/file/d/1_VE98bS5uPIYRTI9dHxrTMerYLzst1Er/view"
+    }
+  ],
+  "topics": [
+    {
+      "id": "fundamentos",
+      "title": "Fundamentos y aprendizaje"
+    },
+    {
+      "id": "proyectos",
+      "title": "KDD, CRISP-DM y DDS"
+    },
+    {
+      "id": "etl",
+      "title": "ETL y arquitectura de datos"
+    },
+    {
+      "id": "preprocesamiento",
+      "title": "Preprocesamiento y calidad"
+    },
+    {
+      "id": "estadistica",
+      "title": "Estadística y visualización"
+    },
+    {
+      "id": "lineal",
+      "title": "Regresión lineal y regularización"
+    },
+    {
+      "id": "logistica",
+      "title": "Regresión logística"
+    },
+    {
+      "id": "metricas",
+      "title": "Métricas y validación"
+    },
+    {
+      "id": "arboles",
+      "title": "Árboles de decisión"
+    },
+    {
+      "id": "multiclase",
+      "title": "Clasificación multiclase"
+    },
+    {
+      "id": "knn",
+      "title": "K vecinos más cercanos"
+    },
+    {
+      "id": "pca",
+      "title": "Reducción de dimensión y PCA"
+    },
+    {
+      "id": "clustering",
+      "title": "Clustering"
+    },
+    {
+      "id": "caso",
+      "title": "Caso UTN y parciales anteriores"
+    }
+  ],
+  "questions": [
+    {
+      "id": "CD-001",
+      "topic": "estadistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "¿Qué sucede si hay un número par de datos y dos valores centrales?",
+      "explanation": "Ordená los datos y promediá los dos centrales. No confundas mediana con media de todos los datos.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 1, pregunta 1"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Se suman sin dividir."
+        },
+        {
+          "id": "a",
+          "text": "La mediana se calcula promediando los dos valores centrales."
+        },
+        {
+          "id": "d",
+          "text": "Se resta un valor central del otro."
+        },
+        {
+          "id": "c",
+          "text": "Se divide un valor central por el otro."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-002",
+      "topic": "caso",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "Según la clave del parcial 2024, la iniciativa de Open Data tiene como objetivo:",
+      "explanation": "Esta es la clave que muestra el parcial, no una definición universal de Open Data. La reutilización comercial también puede ser compatible con datos abiertos; el contraste entre opciones comerciales es ambiguo. Se conserva solo para reconocer el criterio histórico.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 1, pregunta 2"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Favorecer la difusión de las actividades comerciales y ciudadanas de una localidad."
+        },
+        {
+          "id": "e",
+          "text": "Ayudar a las empresas privadas a realizar negocios con los datos."
+        },
+        {
+          "id": "c",
+          "text": "Aumentar la transparencia de la administración pública."
+        },
+        {
+          "id": "d",
+          "text": "Permitir el acceso a los datos de gestión restringidos del gobierno."
+        },
+        {
+          "id": "b",
+          "text": "Ofrecer valor a los ciudadanos con los datos de la gestión gubernamental."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "note": "Clave histórica discutible. No generalizar."
+    },
+    {
+      "id": "CD-003",
+      "topic": "estadistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "¿Cuál es la media de los siguientes datos: 5, 8, 12, 15, 20?",
+      "explanation": "La suma es 60 y hay 5 observaciones. El valor coincide con la mediana por casualidad; las definiciones difieren.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 2, pregunta 3"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "60 / 25 = 2,4."
+        },
+        {
+          "id": "a",
+          "text": "(5 + 8 + 12 + 15 + 20) / 5 = 12."
+        },
+        {
+          "id": "d",
+          "text": "La media es el tercer dato: 12, por definición."
+        },
+        {
+          "id": "c",
+          "text": "60 / 60 = 1."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-004",
+      "topic": "proyectos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "¿Quién es el encargado de priorizar el Backlog de producto?",
+      "explanation": "El Product Owner responde por la priorización, con aporte del equipo y de los interesados.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 2, pregunta 4"
+        },
+        {
+          "source": "gestion",
+          "locator": "Priorización del Backlog"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "El coach ágil."
+        },
+        {
+          "id": "d",
+          "text": "El equipo de Desarrollo como único responsable."
+        },
+        {
+          "id": "a",
+          "text": "El Dueño de Producto."
+        },
+        {
+          "id": "c",
+          "text": "El Scrum Master."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-005",
+      "topic": "estadistica",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "Según la clave del parcial 2024, ¿cuáles NO corresponden a una presentación efectiva?",
+      "explanation": "La clave histórica marca esas dos opciones. No debe interpretarse que los ruidos y gestos exagerados sean recomendables: el ítem es ambiguo. Como criterio general, seleccioná información relevante y usá gráficos adecuados para comparar períodos.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 3, pregunta 5"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mostrar en gráficos circulares sin cifras los porcentajes de crecimiento comparado contra otro período."
+        },
+        {
+          "id": "d",
+          "text": "Provocar la atención del asistente con ruidos y gestos exagerados."
+        },
+        {
+          "id": "b",
+          "text": "Proporcionar toda la información recabada durante la investigación."
+        },
+        {
+          "id": "c",
+          "text": "Llamar la atención con cambios en los tonos de voz."
+        },
+        {
+          "id": "e",
+          "text": "Generar empatía con el asistente."
+        }
+      ],
+      "answer": [
+        "a",
+        "b"
+      ],
+      "note": "Ítem ambiguo: se reproduce la clave visible, no una recomendación comunicacional."
+    },
+    {
+      "id": "CD-006",
+      "topic": "proyectos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "Según el parcial 2024, ¿quién y cuándo presenta al cliente la demo del producto?",
+      "explanation": "Es la respuesta visible del parcial. No confundir esta pregunta de Scrum con el calendario de revisiones de DDS.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 3, pregunta 6"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "El coach ágil en el Sprint Review."
+        },
+        {
+          "id": "d",
+          "text": "El Product Owner como único presentador en el Sprint Review."
+        },
+        {
+          "id": "a",
+          "text": "El equipo Scrum en el Sprint Review."
+        },
+        {
+          "id": "c",
+          "text": "El equipo Scrum en el Sprint Cero."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-007",
+      "topic": "proyectos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "Según el parcial 2024, ¿qué reunión se debe llevar a cabo de pie?",
+      "explanation": "La clave histórica es daily. Estar de pie es una convención habitual del stand-up, no una condición universal para que una reunión diaria sea válida.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 4, pregunta 7"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "La reunión diaria o daily."
+        },
+        {
+          "id": "b",
+          "text": "La reunión de priorización de Backlog."
+        },
+        {
+          "id": "c",
+          "text": "La planificación del Sprint."
+        },
+        {
+          "id": "d",
+          "text": "La revisión de Sprint."
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "note": "Convención del parcial histórico."
+    },
+    {
+      "id": "CD-008",
+      "topic": "estadistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "¿Cuál es la mediana de los siguientes datos: 10, 15, 20, 25, 30?",
+      "explanation": "Ordenados los 5 datos, la posición central es la tercera: 20.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 4, pregunta 8"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "22,5."
+        },
+        {
+          "id": "a",
+          "text": "20."
+        },
+        {
+          "id": "d",
+          "text": "15."
+        },
+        {
+          "id": "b",
+          "text": "Es imposible calcularla."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-009",
+      "topic": "proyectos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "Establecer claramente los ítems del Product Backlog es una responsabilidad del:",
+      "explanation": "La clave atribuye la responsabilidad al Dueño del producto; puede colaborar con otros para redactarlos.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 5, pregunta 9"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dueño del producto."
+        },
+        {
+          "id": "c",
+          "text": "Equipo Scrum como único responsable."
+        },
+        {
+          "id": "d",
+          "text": "Scrum Master."
+        },
+        {
+          "id": "b",
+          "text": "Usuario."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-010",
+      "topic": "caso",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "Según las opciones del parcial 2024, ¿en qué formatos pueden encontrarse datos en un sitio de Open Data?",
+      "explanation": "Esta selección reproduce la clave del parcial. Un portal real también puede publicar imágenes; aquí se evalúan los formatos tabulares o estructurados enumerados. XLSX no es un formato abierto en el mismo sentido que CSV, pero puede ser un formato de distribución.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 5, pregunta 10"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "CSV y JPG."
+        },
+        {
+          "id": "e",
+          "text": "CSV y PNG."
+        },
+        {
+          "id": "b",
+          "text": "XLSX y XML."
+        },
+        {
+          "id": "c",
+          "text": "CSV y JSON."
+        },
+        {
+          "id": "a",
+          "text": "CSV y XLSX."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ],
+      "note": "No significa que un portal real no pueda contener imágenes."
+    },
+    {
+      "id": "CD-011",
+      "topic": "caso",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "¿Qué discrepancia se encontró en los registros de SIU Araucano respecto de su documentación?",
+      "explanation": "En la evaluación se identifica una estructura de filas variable. Antes de integrar, se debe contrastar la documentación con los archivos reales.",
+      "references": [
+        {
+          "source": "experto",
+          "locator": "p. 1, pregunta 1"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "La documentación está escrita en un lenguaje obsoleto."
+        },
+        {
+          "id": "d",
+          "text": "La documentación no especifica los nombres de campos."
+        },
+        {
+          "id": "b",
+          "text": "Todos los registros tienen exactamente 130 columnas siempre llenas."
+        },
+        {
+          "id": "a",
+          "text": "Las filas no siempre traen la misma cantidad de columnas."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-012",
+      "topic": "caso",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "¿Cuál es uno de los formatos homogéneos de la etapa 2 del caso UTN?",
+      "explanation": "Es el criterio de homogeneización mencionado para ese caso; no una obligación universal de formato de fechas.",
+      "references": [
+        {
+          "source": "experto",
+          "locator": "p. 2, pregunta 3"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Todas las edades a punto flotante."
+        },
+        {
+          "id": "b",
+          "text": "Fechas a texto largo y nombres en binario."
+        },
+        {
+          "id": "a",
+          "text": "Boolean a binario y fechas a DD/MM/AAAA."
+        },
+        {
+          "id": "d",
+          "text": "CUIL a nombres de usuario aleatorios."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-013",
+      "topic": "caso",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "En la transformación del caso UTN, ¿qué se hace con los nulos?",
+      "explanation": "La decisión depende del significado y de las posibilidades de recuperación. Completar con N solo es válido si esa codificación representa el dato correctamente.",
+      "references": [
+        {
+          "source": "experto",
+          "locator": "p. 3, pregunta 5"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "No se borran sin evaluar antes si conviene completarlos."
+        },
+        {
+          "id": "d",
+          "text": "Se pide siempre a los estudiantes que completen los datos."
+        },
+        {
+          "id": "b",
+          "text": "Se borran todos los registros automáticamente."
+        },
+        {
+          "id": "c",
+          "text": "Se ignoran siempre."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-014",
+      "topic": "caso",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "El análisis exploratorio mediante gráficas ayuda a mostrar avances y tomar definiciones más informadas para el proyecto.",
+      "explanation": "La devolución lo expresa explícitamente y vincula esos avances con la validación con el PO.",
+      "references": [
+        {
+          "source": "experto",
+          "locator": "p. 4, pregunta 6"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "true"
+      ]
+    },
+    {
+      "id": "CD-015",
+      "topic": "caso",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "Cada regional de la universidad carga sus archivos de manera homogénea siguiendo un único estándar estricto.",
+      "explanation": "El caso describe heterogeneidad de estructuras y codificaciones entre fuentes y regionales.",
+      "references": [
+        {
+          "source": "experto",
+          "locator": "p. 4, pregunta 7"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-016",
+      "topic": "caso",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "¿Qué característica presentan los archivos brindados por las regionales bajo SIU Araucano?",
+      "explanation": "Los 16 CSV corresponden a otra fuente mencionada en el caso, no a Araucano.",
+      "references": [
+        {
+          "source": "experto",
+          "locator": "p. 5, pregunta 8"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "30 archivos ZIP que contienen 10 archivos TXT cada uno."
+        },
+        {
+          "id": "d",
+          "text": "Archivos XML con actualización automática trimestral."
+        },
+        {
+          "id": "b",
+          "text": "4 Office Forms de difícil migración."
+        },
+        {
+          "id": "c",
+          "text": "16 archivos CSV sin relación entre sí."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-017",
+      "topic": "caso",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "¿Cuál fue el objetivo principal del estudio de 2023 del grupo de CDD?",
+      "explanation": "La pregunta recupera el objetivo de negocio del caso, que guía selección, integración y análisis.",
+      "references": [
+        {
+          "source": "experto",
+          "locator": "p. 5, pregunta 9"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Desarrollar un sistema de gestión académica."
+        },
+        {
+          "id": "d",
+          "text": "Crear pagos de becas internacionales."
+        },
+        {
+          "id": "c",
+          "text": "Digitalizar los papeles del rectorado."
+        },
+        {
+          "id": "a",
+          "text": "Estudiar la deserción estudiantil según el contexto socioeconómico."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-018",
+      "topic": "caso",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "historica",
+      "points": 1,
+      "prompt": "¿Para qué se utiliza principalmente el análisis exploratorio mediante gráficas en el proyecto UTN?",
+      "explanation": "El EDA ayuda a discutir evidencia y revisar decisiones; no sustituye la responsabilidad del PO.",
+      "references": [
+        {
+          "source": "experto",
+          "locator": "p. 6, pregunta 10"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Reemplazar al Product Owner."
+        },
+        {
+          "id": "a",
+          "text": "Mostrar avances y tomar nuevas definiciones más informadas."
+        },
+        {
+          "id": "b",
+          "text": "Decorar los informes finales."
+        },
+        {
+          "id": "d",
+          "text": "Detectar virus en los ZIP."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-019",
+      "topic": "fundamentos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué diferencia a la estadística inferencial de la descriptiva?",
+      "explanation": "La descriptiva resume lo observado; la inferencial estima y contrasta sobre una población usando una muestra.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Conceptos básicos; fundamentos del aprendizaje automático"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Siempre conoce todos los valores poblacionales."
+        },
+        {
+          "id": "a",
+          "text": "Generaliza desde una muestra hacia una población con incertidumbre."
+        },
+        {
+          "id": "c",
+          "text": "No utiliza probabilidades."
+        },
+        {
+          "id": "b",
+          "text": "Solo organiza datos en tablas."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-020",
+      "topic": "fundamentos",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Uní cada enfoque con la descripción correspondiente.",
+      "explanation": "IA es el campo más amplio; ML es un área de IA; minería de datos es una etapa del proceso KDD.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Conceptos básicos; fundamentos del aprendizaje automático"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "IA simbólica",
+          "right": "Conocimiento explícito mediante reglas y símbolos"
+        },
+        {
+          "id": "1",
+          "left": "IA subsimbólica",
+          "right": "Aprende representaciones y patrones, por ejemplo con redes neuronales"
+        },
+        {
+          "id": "2",
+          "left": "Aprendizaje automático",
+          "right": "Mejora el desempeño con la experiencia"
+        },
+        {
+          "id": "3",
+          "left": "Minería de datos",
+          "right": "Descubre patrones útiles y no triviales en datos"
+        }
+      ]
+    },
+    {
+      "id": "CD-021",
+      "topic": "fundamentos",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Minería de datos y KDD designan exactamente el mismo proceso completo.",
+      "explanation": "La minería es un paso de KDD. KDD también incluye preparación, evaluación y presentación del conocimiento.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Conceptos básicos; fundamentos del aprendizaje automático"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-022",
+      "topic": "fundamentos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "En el paradigma supervisado, ¿qué se utiliza para aprender el modelo?",
+      "explanation": "Los pares (x,y) permiten ajustar una hipótesis. Luego se aplica a entradas nuevas.",
+      "references": [
+        {
+          "source": "ml",
+          "locator": "Paradigma tradicional vs. aprendizaje automático"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Únicamente las predicciones futuras."
+        },
+        {
+          "id": "b",
+          "text": "Solo instrucciones escritas a mano."
+        },
+        {
+          "id": "a",
+          "text": "Entradas y salidas objetivo observadas."
+        },
+        {
+          "id": "d",
+          "text": "Solo recompensas sin ejemplos etiquetados."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-023",
+      "topic": "fundamentos",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná cada problema con el tipo de aprendizaje.",
+      "explanation": "La variable objetivo y el tipo de realimentación determinan el planteo.",
+      "references": [
+        {
+          "source": "ml",
+          "locator": "Tipos de aprendizaje"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Predecir precio con ejemplos históricos etiquetados",
+          "right": "Supervisado: regresión"
+        },
+        {
+          "id": "1",
+          "left": "Asignar spam/no spam con ejemplos etiquetados",
+          "right": "Supervisado: clasificación"
+        },
+        {
+          "id": "2",
+          "left": "Agrupar clientes sin etiquetas",
+          "right": "No supervisado"
+        },
+        {
+          "id": "3",
+          "left": "Aprender una política por recompensas",
+          "right": "Por refuerzo"
+        }
+      ]
+    },
+    {
+      "id": "CD-024",
+      "topic": "fundamentos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Un dataset tiene 10.000 entradas y solo 200 etiquetas. Si se aprovechan ambos grupos durante el aprendizaje, corresponde a:",
+      "explanation": "El aprendizaje semisupervisado combina ejemplos etiquetados y no etiquetados.",
+      "references": [
+        {
+          "source": "ml",
+          "locator": "Tipos de aprendizaje"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Aprendizaje supervisado puro que descarta las 9.800 entradas."
+        },
+        {
+          "id": "a",
+          "text": "Aprendizaje semisupervisado."
+        },
+        {
+          "id": "d",
+          "text": "Programación tradicional necesariamente."
+        },
+        {
+          "id": "c",
+          "text": "Regresión necesariamente."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-025",
+      "topic": "fundamentos",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Seleccioná tareas mencionadas para aprendizaje no supervisado.",
+      "explanation": "Se buscan estructuras o patrones sin disponer de la salida objetivo para cada observación.",
+      "references": [
+        {
+          "source": "ml",
+          "locator": "Aprendizaje no supervisado"
+        }
+      ],
+      "options": [
+        {
+          "id": "e",
+          "text": "Clasificación supervisada con todas las etiquetas conocidas."
+        },
+        {
+          "id": "c",
+          "text": "Reducción de dimensionalidad."
+        },
+        {
+          "id": "d",
+          "text": "Detección de anomalías sin etiquetas."
+        },
+        {
+          "id": "b",
+          "text": "Reglas de asociación."
+        },
+        {
+          "id": "a",
+          "text": "Clustering."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "CD-026",
+      "topic": "fundamentos",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Más datos garantizan siempre una mejor generalización, aunque estén mal etiquetados o no representen la población objetivo.",
+      "explanation": "Cantidad no reemplaza calidad ni representatividad. Es una precisión frente a la simplificación del resumen.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Conceptos fundamentales, p. 23"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-027",
+      "topic": "fundamentos",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná el rol con su foco principal.",
+      "explanation": "Los roles colaboran; sus responsabilidades pueden superponerse sin perder estos focos.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Conceptos básicos; fundamentos del aprendizaje automático"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Ingeniero de datos",
+          "right": "Construir y mantener infraestructura y flujos de datos"
+        },
+        {
+          "id": "1",
+          "left": "Científico de datos",
+          "right": "Desarrollar análisis y modelos para responder preguntas"
+        },
+        {
+          "id": "2",
+          "left": "Analista de negocio",
+          "right": "Conectar necesidades del negocio con decisiones y requerimientos"
+        }
+      ]
+    },
+    {
+      "id": "CD-028",
+      "topic": "fundamentos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cuál diferencia describe mejor análisis descriptivo, predictivo y prescriptivo?",
+      "explanation": "El resumen presenta una progresión desde reportes hasta modelado y optimización.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Evolución del análisis, pp. 8–9"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "El prescriptivo elimina toda incertidumbre."
+        },
+        {
+          "id": "d",
+          "text": "El descriptivo determina automáticamente la mejor acción futura."
+        },
+        {
+          "id": "b",
+          "text": "Todos solo describen el pasado."
+        },
+        {
+          "id": "a",
+          "text": "Describir qué pasó, anticipar qué puede pasar y recomendar qué hacer."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-029",
+      "topic": "fundamentos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué relación es correcta entre Python, scikit-learn, R y RStudio?",
+      "explanation": "La clase distingue lenguajes, bibliotecas y entornos de desarrollo.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Herramientas: Python + Scikit-Learn; R y RStudio"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "RStudio es el nombre completo del lenguaje Python."
+        },
+        {
+          "id": "a",
+          "text": "RStudio es un IDE para R; scikit-learn aporta herramientas de aprendizaje automático en Python."
+        },
+        {
+          "id": "c",
+          "text": "scikit-learn es una base de datos relacional."
+        },
+        {
+          "id": "d",
+          "text": "R solo permite gráficos y no análisis estadístico."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-030",
+      "topic": "proyectos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cuál es un resultado central de un proyecto de Ciencia de Datos?",
+      "explanation": "El valor se mide en función de la pregunta y del uso de los resultados, no solo del software construido.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Siempre una interfaz de software terminada."
+        },
+        {
+          "id": "a",
+          "text": "Un activo o conocimiento que ayude a tomar decisiones."
+        },
+        {
+          "id": "d",
+          "text": "Solo la cantidad de líneas programadas."
+        },
+        {
+          "id": "c",
+          "text": "Una garantía de que toda hipótesis inicial es verdadera."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-031",
+      "topic": "proyectos",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Uní cada paso de KDD con su actividad.",
+      "explanation": "KDD es iterativo: las decisiones posteriores pueden exigir volver a preparar los datos.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Selección",
+          "right": "Elegir datos relevantes para el problema"
+        },
+        {
+          "id": "1",
+          "left": "Transformación",
+          "right": "Obtener representaciones adecuadas para analizar"
+        },
+        {
+          "id": "2",
+          "left": "Minería de datos",
+          "right": "Descubrir patrones mediante algoritmos"
+        },
+        {
+          "id": "3",
+          "left": "Evaluación de patrones",
+          "right": "Valorar utilidad e interés de los patrones"
+        },
+        {
+          "id": "4",
+          "left": "Presentación del conocimiento",
+          "right": "Comunicar los hallazgos"
+        }
+      ]
+    },
+    {
+      "id": "CD-032",
+      "topic": "proyectos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "En CRISP-DM, ¿qué fase vincula primero el trabajo con el objetivo organizacional?",
+      "explanation": "Business Understanding encuadra la necesidad. Data Understanding analiza los datos disponibles.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Preparación de datos antes de formular cualquier objetivo."
+        },
+        {
+          "id": "b",
+          "text": "Modelado."
+        },
+        {
+          "id": "a",
+          "text": "Comprensión del negocio."
+        },
+        {
+          "id": "c",
+          "text": "Despliegue."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-033",
+      "topic": "proyectos",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná las fases de CRISP-DM.",
+      "explanation": "CRISP-DM no es una secuencia rígida de una sola pasada.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Data Understanding",
+          "right": "Explorar y comprender los datos"
+        },
+        {
+          "id": "1",
+          "left": "Data Preparation",
+          "right": "Preparar el conjunto para modelar"
+        },
+        {
+          "id": "2",
+          "left": "Modeling",
+          "right": "Construir y ajustar modelos"
+        },
+        {
+          "id": "3",
+          "left": "Evaluation",
+          "right": "Evaluar resultados y su adecuación al negocio"
+        },
+        {
+          "id": "4",
+          "left": "Deployment",
+          "right": "Poner resultados o soluciones en uso"
+        }
+      ]
+    },
+    {
+      "id": "CD-034",
+      "topic": "proyectos",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "En DDS la iteración debe finalizar siempre porque transcurrieron dos semanas, aunque aún no se respondió la pregunta.",
+      "explanation": "DDS guía la iteración por el proceso empírico y la capacidad; los eventos regulares no imponen esa duración fija.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "DDS: tres conceptos clave; duración de la iteración"
+        },
+        {
+          "source": "dds",
+          "locator": "Iteraciones orientadas a capacidad"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-035",
+      "topic": "proyectos",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Uní cada actividad DDS con su propósito.",
+      "explanation": "Una iteración abarca el ciclo empírico, no solamente programar el artefacto.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Crear",
+          "right": "Construir un artefacto para una pregunta"
+        },
+        {
+          "id": "1",
+          "left": "Observar",
+          "right": "Obtener evidencia del comportamiento del artefacto"
+        },
+        {
+          "id": "2",
+          "left": "Analizar",
+          "right": "Interpretar observaciones y decidir los pasos siguientes"
+        }
+      ]
+    },
+    {
+      "id": "CD-036",
+      "topic": "proyectos",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué se estima durante el refinamiento del backlog en DDS?",
+      "explanation": "Son estimaciones relativas que orientan la priorización bajo incertidumbre.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Probabilidad de éxito."
+        },
+        {
+          "id": "b",
+          "text": "Esfuerzo requerido."
+        },
+        {
+          "id": "a",
+          "text": "Valor del ítem completado."
+        },
+        {
+          "id": "d",
+          "text": "Un resultado exitoso garantizado para cada experimento."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-037",
+      "topic": "proyectos",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná los roles de DDS.",
+      "explanation": "DDS significa Data Driven Scrum. No debe expandirse como Desarrollo Dirigido por el Dominio, error presente en el resumen.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Product Owner",
+          "right": "Priorizar el valor y el backlog"
+        },
+        {
+          "id": "1",
+          "left": "Process Expert",
+          "right": "Facilitar y mejorar el proceso de trabajo"
+        },
+        {
+          "id": "2",
+          "left": "Miembros del equipo DDS",
+          "right": "Realizar el trabajo de creación, observación y análisis"
+        }
+      ]
+    },
+    {
+      "id": "CD-038",
+      "topic": "proyectos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Para qué sirven los incrementos de producto en DDS?",
+      "explanation": "Las iteraciones y los incrementos tienen escalas distintas. La clase da un horizonte de ejemplo de tres meses para un incremento.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Fijar metas de alto nivel que abarcan varias iteraciones y alinean expectativas."
+        },
+        {
+          "id": "c",
+          "text": "Impedir que dos iteraciones coexistan."
+        },
+        {
+          "id": "d",
+          "text": "Eliminar las conversaciones con el cliente."
+        },
+        {
+          "id": "b",
+          "text": "Reemplazar el análisis por un plazo fijo para cada tarea."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-039",
+      "topic": "proyectos",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "En DDS pueden ejecutarse varias iteraciones en paralelo si la capacidad lo permite.",
+      "explanation": "La clase lo contempla expresamente. Los eventos periódicos ayudan a coordinar el trabajo.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "true"
+      ]
+    },
+    {
+      "id": "CD-040",
+      "topic": "proyectos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cuál historia de usuario tiene mayor precisión verificable?",
+      "explanation": "La historia identifica usuario, entregable y beneficio; los criterios de aceptación permiten verificar el resultado.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Como analista de fraudes quiero una lista de transacciones con probabilidad mayor a 0,70 para investigarlas, con criterios de aceptación."
+        },
+        {
+          "id": "c",
+          "text": "Usar Python porque es popular."
+        },
+        {
+          "id": "d",
+          "text": "Tener todos los datos disponibles algún día."
+        },
+        {
+          "id": "b",
+          "text": "Construir una IA avanzada cuanto antes."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-041",
+      "topic": "proyectos",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Una revisión de iteración DDS y una retrospectiva tienen el mismo foco.",
+      "explanation": "La revisión examina artefactos y resultados; la retrospectiva mejora el proceso de trabajo del equipo.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-042",
+      "topic": "proyectos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué diferencia hay entre Backlog, Item Breakdown Board y Task Board?",
+      "explanation": "La clase distingue estos artefactos y el desglose en Crear, Observar y Analizar.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Son tres nombres del dataset de prueba."
+        },
+        {
+          "id": "a",
+          "text": "Lista priorizada de ítems, desglose del trabajo y seguimiento de tareas."
+        },
+        {
+          "id": "d",
+          "text": "El Backlog registra únicamente ítems ya terminados."
+        },
+        {
+          "id": "c",
+          "text": "El Task Board contiene solo objetivos comerciales sin tareas."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-043",
+      "topic": "etl",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Uní cada etapa ETL con una operación.",
+      "explanation": "El orden de ETL es extraer, transformar y cargar.",
+      "references": [
+        {
+          "source": "etl",
+          "locator": "Extracción, transformación y carga; almacenes de datos"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Extracción",
+          "right": "Copiar datos desde fuentes a un área de preparación"
+        },
+        {
+          "id": "1",
+          "left": "Transformación",
+          "right": "Limpiar, homogeneizar y adaptar datos"
+        },
+        {
+          "id": "2",
+          "left": "Carga",
+          "right": "Escribir los datos preparados en el destino"
+        }
+      ]
+    },
+    {
+      "id": "CD-044",
+      "topic": "etl",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué diferencia principal distingue ELT de ETL?",
+      "explanation": "El orden indica dónde y cuándo se transforma. El tamaño o la frecuencia no son prohibiciones universales de uso.",
+      "references": [
+        {
+          "source": "etl",
+          "locator": "Extracción, transformación y carga; almacenes de datos"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "ELT significa eliminar, leer y tabular."
+        },
+        {
+          "id": "b",
+          "text": "ELT nunca extrae datos."
+        },
+        {
+          "id": "a",
+          "text": "En ELT la transformación ocurre después de cargar los datos en el destino."
+        },
+        {
+          "id": "c",
+          "text": "ETL solo acepta archivos CSV."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-045",
+      "topic": "etl",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cuáles son fuentes o mecanismos de extracción mencionados en el material?",
+      "explanation": "La extracción puede reunir datos estructurados y no estructurados.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Técnicas de extracción, pp. 33–34"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "APIs y archivos planos."
+        },
+        {
+          "id": "c",
+          "text": "Sensores, streams y web scraping."
+        },
+        {
+          "id": "a",
+          "text": "Bases de datos relacionales y NoSQL."
+        },
+        {
+          "id": "d",
+          "text": "El F1 del clasificador como reemplazo de todas las fuentes."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-046",
+      "topic": "etl",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná cada tipo con un ejemplo.",
+      "explanation": "La distinción de fuente depende del origen del dato, no solo del formato.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Tipos de fuentes, pp. 33–34"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Fuente primaria",
+          "right": "Mediciones producidas directamente por un sensor del estudio"
+        },
+        {
+          "id": "1",
+          "left": "Fuente secundaria",
+          "right": "Compilación de mediciones originales realizada por otro organismo"
+        },
+        {
+          "id": "2",
+          "left": "Datos estructurados",
+          "right": "Tabla relacional con columnas definidas"
+        },
+        {
+          "id": "3",
+          "left": "Datos no estructurados",
+          "right": "Imagen o texto libre sin esquema tabular fijo"
+        }
+      ]
+    },
+    {
+      "id": "CD-047",
+      "topic": "etl",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué característica corresponde al Data Warehouse según Inmon?",
+      "explanation": "El almacén se orienta a consulta y análisis. Inmon se asocia a un enfoque Top-Down.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Almacén de datos: Inmon y Kimball"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Orientado a temas, integrado, no volátil y variante en el tiempo."
+        },
+        {
+          "id": "c",
+          "text": "Ausencia obligatoria de estructura."
+        },
+        {
+          "id": "b",
+          "text": "Datos exclusivamente efímeros sin historial."
+        },
+        {
+          "id": "d",
+          "text": "Repositorio para sobrescribir cada transacción operacional."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-048",
+      "topic": "etl",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná cada enfoque o repositorio.",
+      "explanation": "Los enfoques de warehouse y los repositorios atienden necesidades distintas.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Almacén de datos"
+        },
+        {
+          "source": "etl",
+          "locator": "Data Warehouse; Data Mart; Data Lake"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Inmon",
+          "right": "Top-Down"
+        },
+        {
+          "id": "1",
+          "left": "Kimball",
+          "right": "Bottom-Up"
+        },
+        {
+          "id": "2",
+          "left": "Data Mart",
+          "right": "Subconjunto orientado a una unidad de negocio"
+        },
+        {
+          "id": "3",
+          "left": "Data Lake",
+          "right": "Datos nativos estructurados, semiestructurados y no estructurados"
+        }
+      ]
+    },
+    {
+      "id": "CD-049",
+      "topic": "etl",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Schema on read significa validar y fijar obligatoriamente todo el esquema antes de almacenar cada archivo.",
+      "explanation": "Significa interpretar el esquema al leer. No implica prescindir de catalogación, seguridad o controles de calidad.",
+      "references": [
+        {
+          "source": "etl",
+          "locator": "Extracción, transformación y carga; almacenes de datos"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-050",
+      "topic": "etl",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cuáles son desafíos reales de un Data Lake?",
+      "explanation": "La flexibilidad del almacenamiento nativo exige gobierno para evitar un repositorio inusable.",
+      "references": [
+        {
+          "source": "etl",
+          "locator": "Extracción, transformación y carga; almacenes de datos"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Mantener gobernanza y calidad."
+        },
+        {
+          "id": "b",
+          "text": "Proteger el acceso."
+        },
+        {
+          "id": "a",
+          "text": "Catalogar y descubrir los datos."
+        },
+        {
+          "id": "d",
+          "text": "La imposibilidad de almacenar datos estructurados."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-051",
+      "topic": "etl",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué busca una arquitectura Data Lakehouse?",
+      "explanation": "El material presenta lakehouse como integración de capacidades de ambas arquitecturas.",
+      "references": [
+        {
+          "source": "etl",
+          "locator": "Extracción, transformación y carga; almacenes de datos"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Almacenar únicamente hojas de cálculo."
+        },
+        {
+          "id": "a",
+          "text": "Combinar flexibilidad del lake con capacidades de gestión y análisis propias de un warehouse."
+        },
+        {
+          "id": "d",
+          "text": "Prohibir el análisis de datos no estructurados."
+        },
+        {
+          "id": "b",
+          "text": "Eliminar toda necesidad de gobernanza."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-052",
+      "topic": "etl",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Para qué se utiliza OLAP?",
+      "explanation": "OLAP organiza consultas analíticas multidimensionales, por ejemplo ventas por período y región.",
+      "references": [
+        {
+          "source": "etl",
+          "locator": "Extracción, transformación y carga; almacenes de datos"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Reemplazar el significado de todas las claves."
+        },
+        {
+          "id": "b",
+          "text": "Ejecutar exclusivamente transacciones individuales de caja."
+        },
+        {
+          "id": "d",
+          "text": "Entrenar únicamente clasificadores binarios."
+        },
+        {
+          "id": "a",
+          "text": "Analizar medidas por dimensiones y niveles de agregación."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-053",
+      "topic": "etl",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná cada método de integración.",
+      "explanation": "Elegí el mecanismo según latencia, volumen, consistencia y uso.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Métodos de integración, pp. 43–44"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "CDC",
+          "right": "Detectar y transferir cambios en los datos de origen"
+        },
+        {
+          "id": "1",
+          "left": "Replicación",
+          "right": "Copiar datos o cambios a otra ubicación"
+        },
+        {
+          "id": "2",
+          "left": "Virtualización",
+          "right": "Ofrecer una vista unificada sin copiar físicamente todos los datos"
+        },
+        {
+          "id": "3",
+          "left": "Integración de streams",
+          "right": "Procesar flujos a medida que llegan"
+        }
+      ]
+    },
+    {
+      "id": "CD-054",
+      "topic": "etl",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Un informe se actualiza cada noche con el conjunto de ventas del día. ¿Qué procesamiento describe mejor el caso?",
+      "explanation": "En batch se procesan conjuntos en momentos definidos. Streaming procesa eventos de forma continua.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Técnicas de carga; procesamientos discretos y continuos, pp. 42–44"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Aprendizaje por refuerzo."
+        },
+        {
+          "id": "d",
+          "text": "Virtualización necesariamente."
+        },
+        {
+          "id": "a",
+          "text": "Por lotes."
+        },
+        {
+          "id": "b",
+          "text": "Streaming evento por evento necesariamente."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-055",
+      "topic": "etl",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Una carga incremental y una carga completa siempre mueven la misma cantidad de registros.",
+      "explanation": "La completa recarga el conjunto; la incremental mueve lo nuevo o modificado según el criterio implementado.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Técnicas de carga, pp. 42–43"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-056",
+      "topic": "etl",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "¿Qué diseño favorece consultar ventas por cliente, producto y fecha?",
+      "explanation": "El esquema estrella separa hechos y dimensiones. En copo de nieve, dimensiones se normalizan adicionalmente.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Modelos de almacenamiento, p. 44; tema indicado como no dado en clase"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Un clasificador sin datos históricos."
+        },
+        {
+          "id": "a",
+          "text": "Una tabla de hechos con medidas y dimensiones descriptivas."
+        },
+        {
+          "id": "b",
+          "text": "Una sola imagen sin valores ni relaciones."
+        },
+        {
+          "id": "c",
+          "text": "Una tabla de etiquetas de spam."
+        }
+      ],
+      "answer": [
+        "a"
+      ],
+      "note": "Ampliación del resumen: el propio material indica que estos modelos no se dieron en clase."
+    },
+    {
+      "id": "CD-057",
+      "topic": "preprocesamiento",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná cada variable con su tipo.",
+      "explanation": "El orden de las categorías no equivale a una distancia numérica medible.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Tipo de sangre",
+          "right": "Categórica nominal"
+        },
+        {
+          "id": "1",
+          "left": "Satisfacción baja/media/alta",
+          "right": "Categórica ordinal"
+        },
+        {
+          "id": "2",
+          "left": "Cantidad de hijos",
+          "right": "Numérica discreta"
+        },
+        {
+          "id": "3",
+          "left": "Altura medida",
+          "right": "Numérica continua"
+        },
+        {
+          "id": "4",
+          "left": "Fecha de inscripción",
+          "right": "Fecha-hora"
+        }
+      ]
+    },
+    {
+      "id": "CD-058",
+      "topic": "preprocesamiento",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Codificar provincias como 1, 2 y 3 vuelve cuantitativa la variable provincia.",
+      "explanation": "Los números pueden funcionar solo como códigos. No crean orden ni distancias válidas entre provincias.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-059",
+      "topic": "preprocesamiento",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cuál es el principal problema de unir tablas solo por nombre y apellido?",
+      "explanation": "Hay que resolver entidades y validar claves para evitar duplicaciones o asociaciones erróneas.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "La integración no necesita verificar entidades."
+        },
+        {
+          "id": "d",
+          "text": "Solo se pueden unir tablas numéricas."
+        },
+        {
+          "id": "a",
+          "text": "Personas distintas pueden compartir nombre y la misma persona puede figurar con variantes."
+        },
+        {
+          "id": "b",
+          "text": "Los nombres siempre son identificadores globales únicos."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-060",
+      "topic": "preprocesamiento",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué operaciones corresponden a limpieza o transformación?",
+      "explanation": "La transformación debe preservar significado y documentar reglas. Un extremo puede ser un caso válido.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Eliminar todos los outliers sin investigar su origen."
+        },
+        {
+          "id": "c",
+          "text": "Detectar duplicados y validar consistencia entre edad y fecha de nacimiento."
+        },
+        {
+          "id": "a",
+          "text": "Homogeneizar Córdoba, Cordoba y CORDOBA."
+        },
+        {
+          "id": "b",
+          "text": "Convertir montos a la misma moneda antes de integrar."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-061",
+      "topic": "preprocesamiento",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Eliminar todas las filas con faltantes garantiza no introducir sesgo.",
+      "explanation": "La eliminación puede cambiar la población representada si la ausencia depende de variables relevantes. La frase del resumen que afirma ausencia de sesgo es demasiado general.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-062",
+      "topic": "preprocesamiento",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué decisión es más defendible ante un valor atípico?",
+      "explanation": "El contexto y la procedencia determinan el tratamiento; las técnicas automáticas pueden complementarse con inspección humana.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Borrarlo siempre."
+        },
+        {
+          "id": "a",
+          "text": "Investigar si es error o caso válido y decidir según el objetivo."
+        },
+        {
+          "id": "c",
+          "text": "Sustituirlo siempre por cero."
+        },
+        {
+          "id": "d",
+          "text": "Tratarlo como dato faltante sin revisar."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-063",
+      "topic": "preprocesamiento",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Seleccioná técnicas enumeradas para tratar ruido.",
+      "explanation": "Se busca reducir variaciones espurias. El método debe adaptarse al tipo de dato y a la tarea.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Agrupamiento."
+        },
+        {
+          "id": "c",
+          "text": "Regresión o suavizamiento."
+        },
+        {
+          "id": "a",
+          "text": "Binning."
+        },
+        {
+          "id": "d",
+          "text": "Duplicación sistemática de todas las filas."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-064",
+      "topic": "preprocesamiento",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué diferencia hay entre agregación y generalización?",
+      "explanation": "Sumar ventas mensuales es agregar; pasar de ciudad a provincia es generalizar.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Agregación solo permite eliminar filas al azar."
+        },
+        {
+          "id": "a",
+          "text": "Agregación resume valores; generalización sube a categorías de una jerarquía."
+        },
+        {
+          "id": "b",
+          "text": "Son idénticas y siempre borran variables."
+        },
+        {
+          "id": "c",
+          "text": "Generalización solo significa escalar entre 0 y 1."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-065",
+      "topic": "preprocesamiento",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "El ajuste decimal es simplemente redondear cada valor a una cantidad de decimales.",
+      "explanation": "El ajuste decimal escala mediante x / 10^j, con el menor entero j que hace max(|x transformado|) < 1. No es redondeo.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-066",
+      "topic": "preprocesamiento",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Uní cada técnica con su expresión o idea.",
+      "explanation": "Las fórmulas requieren tratar casos degenerados como rango o desviación iguales a cero.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Min-Max a [0,1]",
+          "right": "(x − mínimo) / (máximo − mínimo)"
+        },
+        {
+          "id": "1",
+          "left": "Z-score",
+          "right": "(x − media) / desviación estándar"
+        },
+        {
+          "id": "2",
+          "left": "Ajuste decimal",
+          "right": "x / 10^j"
+        },
+        {
+          "id": "3",
+          "left": "Construcción de atributos",
+          "right": "Crear una variable derivada de otras"
+        }
+      ]
+    },
+    {
+      "id": "CD-067",
+      "topic": "preprocesamiento",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué diferencia selección de características y PCA?",
+      "explanation": "Son formas distintas de reducir dimensión; selección puede ser supervisada o no supervisada.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "La selección crea siempre autovectores."
+        },
+        {
+          "id": "d",
+          "text": "Ambas necesitan necesariamente etiquetas."
+        },
+        {
+          "id": "b",
+          "text": "PCA solo elimina filas."
+        },
+        {
+          "id": "a",
+          "text": "La selección conserva variables originales; PCA construye combinaciones de ellas."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-068",
+      "topic": "preprocesamiento",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué estrategias de reducción aparecen en la clase?",
+      "explanation": "Reducir tamaño, cantidad de variables o granularidad facilita el análisis preservando información útil.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Compresión y reducción numérica."
+        },
+        {
+          "id": "c",
+          "text": "Reducción de dimensión y discretización."
+        },
+        {
+          "id": "d",
+          "text": "Repetir cada observación diez veces."
+        },
+        {
+          "id": "a",
+          "text": "Agregado de cubo de datos."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-069",
+      "topic": "preprocesamiento",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Agrupar edades en 0–17, 18–64 y 65 o más es:",
+      "explanation": "Convierte una variable numérica en intervalos o categorías. Una jerarquía puede agrupar luego esos intervalos.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Clasificación supervisada necesariamente."
+        },
+        {
+          "id": "c",
+          "text": "Z-score."
+        },
+        {
+          "id": "b",
+          "text": "Imputación de faltantes."
+        },
+        {
+          "id": "a",
+          "text": "Discretización."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-070",
+      "topic": "preprocesamiento",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Imputar con la media calculada en todo el dataset antes de separar prueba puede producir fuga de información.",
+      "explanation": "Los parámetros de preprocesamiento deben aprenderse en entrenamiento y aplicarse a validación/prueba. Es una ampliación para usar correctamente las técnicas de la clase.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "true"
+      ]
+    },
+    {
+      "id": "CD-071",
+      "topic": "preprocesamiento",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué condición hace imposible usar directamente Min-Max a [0,1] para una columna?",
+      "explanation": "Si máximo = mínimo, el denominador es cero. Hace falta un tratamiento explícito para la columna constante.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Que tenga más de 10 filas."
+        },
+        {
+          "id": "d",
+          "text": "Que su máximo sea mayor que 1."
+        },
+        {
+          "id": "a",
+          "text": "Que todos sus valores sean iguales."
+        },
+        {
+          "id": "b",
+          "text": "Que todos sus valores sean positivos."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-072",
+      "topic": "estadistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Para comparar cantidades por categoría, ¿qué gráfico es más directo?",
+      "explanation": "Las barras facilitan comparar magnitudes entre categorías. Elegí el gráfico según la pregunta.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Unidad 3, p. 45: tipos de gráficos (solo temario)"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Barras."
+        },
+        {
+          "id": "b",
+          "text": "Circular para cualquier comparación temporal."
+        },
+        {
+          "id": "c",
+          "text": "Dispersión sin ejes."
+        },
+        {
+          "id": "d",
+          "text": "Q-Q de residuos en todos los casos."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-073",
+      "topic": "estadistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Para estudiar la relación entre dos variables cuantitativas, usarías:",
+      "explanation": "Cada punto representa un par (x,y). Permite ver forma, tendencias y valores atípicos; no prueba causalidad.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Unidad 3, p. 45; parcial 2024"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Lista de nombres sin valores."
+        },
+        {
+          "id": "a",
+          "text": "Diagrama de dispersión."
+        },
+        {
+          "id": "b",
+          "text": "Gráfico circular de una sola categoría."
+        },
+        {
+          "id": "d",
+          "text": "Solo un total agregado."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-074",
+      "topic": "estadistica",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Una correlación alta entre dos variables demuestra que una causa a la otra.",
+      "explanation": "Puede haber confusión, coincidencia o causalidad inversa. La correlación describe asociación, no identifica por sí sola causalidad.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Integración: correlación, p. 37"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-075",
+      "topic": "estadistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "¿Qué representación ayuda a estudiar la distribución de una variable continua?",
+      "explanation": "El histograma agrupa valores en intervalos; su forma depende también de la elección de bins.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Unidad 3, p. 45; parcial 2024"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Un listado sin orden ni frecuencias."
+        },
+        {
+          "id": "b",
+          "text": "Diagrama circular para cada valor individual."
+        },
+        {
+          "id": "a",
+          "text": "Histograma."
+        },
+        {
+          "id": "d",
+          "text": "Un único promedio que preserva toda la distribución."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-076",
+      "topic": "estadistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "¿Qué medida central suele ser más resistente a valores extremos?",
+      "explanation": "La mediana depende de posiciones ordenadas. La media incorpora la magnitud de todos los valores.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "preguntas 1, 3 y 8; ampliación de los conceptos"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Suma."
+        },
+        {
+          "id": "a",
+          "text": "Mediana."
+        },
+        {
+          "id": "d",
+          "text": "Máximo."
+        },
+        {
+          "id": "b",
+          "text": "Media aritmética."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-077",
+      "topic": "estadistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "¿Qué comunica mejor un hallazgo al Product Owner?",
+      "explanation": "La comunicación debe apoyar decisiones; un informe completo no exige presentar todo simultáneamente.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 3, pregunta 5"
+        },
+        {
+          "source": "experto",
+          "locator": "pregunta 10"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Seleccionar evidencia relevante, explicar el impacto y dejar detalles de respaldo accesibles."
+        },
+        {
+          "id": "b",
+          "text": "Mostrar todos los datos sin jerarquía."
+        },
+        {
+          "id": "d",
+          "text": "Ocultar toda limitación del análisis."
+        },
+        {
+          "id": "c",
+          "text": "Usar decoraciones aunque oculten los ejes."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-078",
+      "topic": "lineal",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué variable objetivo caracteriza un problema de regresión?",
+      "explanation": "La regresión supervisada aproxima una relación entre entradas y una salida numérica.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Una clase nominal obligatoriamente."
+        },
+        {
+          "id": "c",
+          "text": "El índice de la fila."
+        },
+        {
+          "id": "d",
+          "text": "Una recompensa como única señal en todos los casos."
+        },
+        {
+          "id": "a",
+          "text": "Un valor numérico continuo, como precio o temperatura."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-079",
+      "topic": "lineal",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "En ŷ = w0 + w1 x, ¿qué representa w0?",
+      "explanation": "w0 es la ordenada al origen; w1 es la pendiente. Si x = 0 queda fuera del dominio observado, su interpretación práctica exige cuidado.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "El cambio en ŷ por unidad de x."
+        },
+        {
+          "id": "d",
+          "text": "El error cuadrático medio."
+        },
+        {
+          "id": "c",
+          "text": "El número de observaciones."
+        },
+        {
+          "id": "a",
+          "text": "La predicción cuando x = 0."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-080",
+      "topic": "lineal",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Un modelo que usa x y x² deja de ser lineal en sus coeficientes.",
+      "explanation": "La regresión polinomial puede ser no lineal en x y seguir siendo lineal en los pesos: ŷ = w0 + w1 x + w2 x².",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-081",
+      "topic": "lineal",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué objetivo minimiza mínimos cuadrados ordinarios?",
+      "explanation": "El residuo es y − ŷ. Algunos costos dividen por n o 2n, sin cambiar el minimizador si el factor es positivo.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "La suma de cuadrados de residuos."
+        },
+        {
+          "id": "c",
+          "text": "La suma de probabilidades de spam."
+        },
+        {
+          "id": "d",
+          "text": "La varianza de x sin considerar y."
+        },
+        {
+          "id": "b",
+          "text": "El número de clases predichas."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-082",
+      "topic": "lineal",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná cada concepto de evaluación.",
+      "explanation": "RMSE está en unidades de y; MSE en unidades cuadradas. R² puede ser negativo fuera de muestra.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Residuo",
+          "right": "Diferencia y − ŷ"
+        },
+        {
+          "id": "1",
+          "left": "MSE",
+          "right": "Promedio de residuos al cuadrado"
+        },
+        {
+          "id": "2",
+          "left": "RMSE",
+          "right": "Raíz del MSE"
+        },
+        {
+          "id": "3",
+          "left": "R²",
+          "right": "1 − SSE / SST, cuando SST > 0"
+        }
+      ]
+    },
+    {
+      "id": "CD-083",
+      "topic": "lineal",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué sugiere un patrón de abanico en residuos frente a valores ajustados?",
+      "explanation": "Puede indicar heterocedasticidad. Las pruebas Breusch-Pagan o White se mencionan en el resumen.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Evaluación de regresión, pp. 49–50"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Que no quedan errores."
+        },
+        {
+          "id": "c",
+          "text": "Normalidad garantizada."
+        },
+        {
+          "id": "a",
+          "text": "Varianza no constante de los errores."
+        },
+        {
+          "id": "b",
+          "text": "Prueba definitiva de causalidad."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-084",
+      "topic": "lineal",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué analiza principalmente un gráfico Q-Q de residuos frente a una normal?",
+      "explanation": "Alineación aproximada apoya compatibilidad; no constituye una demostración de normalidad.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Evaluación de regresión, p. 49"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "La importancia causal de cada predictor."
+        },
+        {
+          "id": "a",
+          "text": "Si la distribución de los residuos es compatible aproximadamente con normalidad."
+        },
+        {
+          "id": "c",
+          "text": "La cantidad óptima de clusters."
+        },
+        {
+          "id": "b",
+          "text": "La igualdad de unidades entre predictores."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-085",
+      "topic": "lineal",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Uní cada situación con el diagnóstico más probable.",
+      "explanation": "El diagnóstico depende de la partición, las métricas y la comparación con baselines.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Error alto en entrenamiento y validación",
+          "right": "Subajuste / alto sesgo"
+        },
+        {
+          "id": "1",
+          "left": "Error muy bajo en entrenamiento y alto en validación",
+          "right": "Sobreajuste / alta varianza"
+        },
+        {
+          "id": "2",
+          "left": "Buen ajuste con error de validación bajo",
+          "right": "Buena generalización para la evaluación realizada"
+        }
+      ]
+    },
+    {
+      "id": "CD-086",
+      "topic": "lineal",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué puede ayudar frente al sobreajuste?",
+      "explanation": "No todas las intervenciones ayudan siempre. La evaluación en datos no usados para ajustar guía la decisión.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Conseguir datos adicionales representativos."
+        },
+        {
+          "id": "a",
+          "text": "Reducir complejidad."
+        },
+        {
+          "id": "b",
+          "text": "Usar regularización y seleccionarla con validación."
+        },
+        {
+          "id": "d",
+          "text": "Elegir siempre el modelo con menor error de entrenamiento."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-087",
+      "topic": "lineal",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná la penalización con su propiedad.",
+      "explanation": "La regularización restringe pesos y puede mejorar el compromiso entre sesgo y varianza.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Ridge / L2",
+          "right": "Penaliza suma de cuadrados de pesos"
+        },
+        {
+          "id": "1",
+          "left": "Lasso / L1",
+          "right": "Penaliza suma de valores absolutos y puede producir ceros exactos"
+        },
+        {
+          "id": "2",
+          "left": "Elastic Net",
+          "right": "Combina L1 y L2"
+        }
+      ]
+    },
+    {
+      "id": "CD-088",
+      "topic": "lineal",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Aumentar mucho la regularización garantiza que el error de prueba disminuya.",
+      "explanation": "Exceso de penalización puede producir subajuste. El parámetro debe seleccionarse con validación, sin usar prueba para elegir.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-089",
+      "topic": "lineal",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Escalar las variables garantiza eliminar el sobreajuste.",
+      "explanation": "Escalar puede mejorar optimización y equilibrar penalizaciones o distancias. No sustituye regularización ni evaluación adecuada.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-090",
+      "topic": "lineal",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "¿Qué actualización corresponde a descenso de gradiente?",
+      "explanation": "Se avanza contra la dirección de máximo aumento. Una tasa α excesiva puede impedir converger.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Algoritmo de entrenamiento, p. 48"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Eliminar todos los pesos en cada paso."
+        },
+        {
+          "id": "d",
+          "text": "Copiar el vector y como pesos."
+        },
+        {
+          "id": "b",
+          "text": "w nuevo = w actual + α por el gradiente siempre."
+        },
+        {
+          "id": "a",
+          "text": "w nuevo = w actual − α por el gradiente del costo."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-091",
+      "topic": "lineal",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Además de regresión lineal, ¿qué métodos para regresión menciona el resumen?",
+      "explanation": "Un mismo tipo de estructura, como un árbol, puede adaptarse a clasificación o regresión.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Otros algoritmos para regresión, pp. 59–60"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Solo regresión logística binaria con etiquetas."
+        },
+        {
+          "id": "d",
+          "text": "Solo clasificación One-vs-One."
+        },
+        {
+          "id": "c",
+          "text": "Únicamente PCA sin modelo predictor."
+        },
+        {
+          "id": "a",
+          "text": "K vecinos, árboles, Random Forest y redes neuronales."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-092",
+      "topic": "logistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "En regresión logística binaria, h(x) se interpreta como:",
+      "explanation": "La sigmoide transforma el puntaje real wᵀx en una probabilidad. La etiqueta se obtiene mediante una regla de decisión.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "La clase entera sin aplicar umbral."
+        },
+        {
+          "id": "a",
+          "text": "P(y = 1 | x; w)."
+        },
+        {
+          "id": "c",
+          "text": "La densidad normal de cada predictor obligatoriamente."
+        },
+        {
+          "id": "d",
+          "text": "La probabilidad de que x sea igual a cero."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-093",
+      "topic": "logistica",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Para z finito, la función sigmoide puede entregar probabilidades negativas.",
+      "explanation": "g(z) = 1/(1+e^(−z)) toma valores estrictamente entre 0 y 1 para z finito.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-094",
+      "topic": "logistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Con regla ŷ = 1 si p ≥ 0,5, ¿qué sucede si wᵀx = 0?",
+      "explanation": "g(0)=0,5. La igualdad se resuelve por la convención ≥ explicitada, evitando la contradicción entre ≤ y ≥ de una filmina.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "p = 0,5 y se predice 1."
+        },
+        {
+          "id": "c",
+          "text": "p = 1 y se predice 1."
+        },
+        {
+          "id": "b",
+          "text": "p = 0 y se predice 0."
+        },
+        {
+          "id": "d",
+          "text": "No puede calcularse."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-095",
+      "topic": "logistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Si z = −5 + x1 + x2 y el umbral es 0,5, la frontera de decisión es:",
+      "explanation": "La frontera es la igualdad z = 0. La región positiva es x1 + x2 ≥ 5 con la regla indicada.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "x1 + x2 > 5 como conjunto completo de frontera."
+        },
+        {
+          "id": "a",
+          "text": "x1 + x2 = 5."
+        },
+        {
+          "id": "c",
+          "text": "x1 + x2 = 0,5."
+        },
+        {
+          "id": "d",
+          "text": "x1 + x2 = −5."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-096",
+      "topic": "logistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Si z = −5 + x1² + x2², ¿qué forma tiene la frontera a umbral 0,5?",
+      "explanation": "La igualdad x1² + x2² = 5 define la circunferencia. Los puntos exteriores tienen z > 0.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Circunferencia de radio √5 centrada en el origen."
+        },
+        {
+          "id": "b",
+          "text": "Recta x1 + x2 = 5."
+        },
+        {
+          "id": "d",
+          "text": "Parábola y = x1² necesariamente."
+        },
+        {
+          "id": "c",
+          "text": "Circunferencia de radio 5."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-097",
+      "topic": "logistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué expresa el logit de p?",
+      "explanation": "Odds = p/(1−p); el logit es su logaritmo. La relación es lineal en los predictores transformados.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ln(p/(1−p)) = wᵀx."
+        },
+        {
+          "id": "c",
+          "text": "ln(p) = x sin pesos."
+        },
+        {
+          "id": "d",
+          "text": "p/(1+p) = 0."
+        },
+        {
+          "id": "b",
+          "text": "p + (1−p) = wᵀx siempre."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-098",
+      "topic": "logistica",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná el valor observado y con la pérdida logística.",
+      "explanation": "Una predicción muy confiada y equivocada recibe una pérdida grande.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "y = 1",
+          "right": "−ln(p)"
+        },
+        {
+          "id": "1",
+          "left": "y = 0",
+          "right": "−ln(1−p)"
+        },
+        {
+          "id": "2",
+          "left": "Caso general",
+          "right": "−y ln(p) − (1−y) ln(1−p)"
+        }
+      ]
+    },
+    {
+      "id": "CD-099",
+      "topic": "logistica",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Clasificar correctamente garantiza una pérdida logística exactamente igual a cero.",
+      "explanation": "Con y = 1 y p = 0,8 se acierta con umbral 0,5, pero −ln(0,8) > 0. Costo cero corresponde al límite de probabilidad correcta igual a 1.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-100",
+      "topic": "logistica",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Derivar la pérdida logística por máxima verosimilitud obliga a que cada predictor x tenga distribución gaussiana.",
+      "explanation": "La respuesta binaria se modela condicionalmente como Bernoulli. No se impone normalidad a cada x. La afirmación gaussiana de la filmina es una errata.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-101",
+      "topic": "logistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué propiedad tiene la pérdida logística estándar con predictor lineal y características fijas?",
+      "explanation": "La convexidad facilita optimización; no garantiza por sí sola un minimizador finito ni convergencia de cualquier algoritmo o tasa de aprendizaje.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Es convexa respecto de los pesos."
+        },
+        {
+          "id": "c",
+          "text": "Es convexa solo si las etiquetas son gaussianas."
+        },
+        {
+          "id": "d",
+          "text": "Garantiza un minimizador finito aun con separación perfecta sin regularización."
+        },
+        {
+          "id": "b",
+          "text": "Siempre posee infinitos mínimos locales aislados."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-102",
+      "topic": "logistica",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué afirmaciones sobre regularización logística son correctas?",
+      "explanation": "Sumar pesos con signo permitiría cancelaciones y no sería una penalización L1. El intercepto suele excluirse en la formulación de clase.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "L2 usa cuadrados de los pesos."
+        },
+        {
+          "id": "b",
+          "text": "L1 usa valores absolutos."
+        },
+        {
+          "id": "c",
+          "text": "λ controla la fuerza de penalización."
+        },
+        {
+          "id": "d",
+          "text": "L1 se calcula sumando pesos con su signo."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-103",
+      "topic": "logistica",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Bajar el umbral de 0,7 a 0,3, manteniendo las probabilidades, produce:",
+      "explanation": "El cambio es de decisión, no de entrenamiento. Sobre el mismo conjunto, TPR y FPR no disminuyen al bajar el umbral.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Un conjunto de predicciones positivas igual o mayor."
+        },
+        {
+          "id": "b",
+          "text": "Menos positivos necesariamente."
+        },
+        {
+          "id": "d",
+          "text": "Una AUC distinta obligatoriamente."
+        },
+        {
+          "id": "c",
+          "text": "Nuevos pesos entrenados automáticamente."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-104",
+      "topic": "metricas",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Uní cada resultado con su definición.",
+      "explanation": "Primero fijá cuál es la clase positiva. No supongas la orientación de una matriz sin leer sus ejes.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "TP",
+          "right": "Real positivo, predicho positivo"
+        },
+        {
+          "id": "1",
+          "left": "TN",
+          "right": "Real negativo, predicho negativo"
+        },
+        {
+          "id": "2",
+          "left": "FP",
+          "right": "Real negativo, predicho positivo"
+        },
+        {
+          "id": "3",
+          "left": "FN",
+          "right": "Real positivo, predicho negativo"
+        }
+      ]
+    },
+    {
+      "id": "CD-105",
+      "topic": "metricas",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná cada métrica con su fórmula.",
+      "explanation": "Precision condiciona en predicciones positivas; recall en positivos reales.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Accuracy",
+          "right": "(TP+TN)/(TP+TN+FP+FN)"
+        },
+        {
+          "id": "1",
+          "left": "Precision",
+          "right": "TP/(TP+FP)"
+        },
+        {
+          "id": "2",
+          "left": "Recall / TPR",
+          "right": "TP/(TP+FN)"
+        },
+        {
+          "id": "3",
+          "left": "Especificidad / TNR",
+          "right": "TN/(TN+FP)"
+        },
+        {
+          "id": "4",
+          "left": "FPR",
+          "right": "FP/(FP+TN)"
+        }
+      ]
+    },
+    {
+      "id": "CD-106",
+      "topic": "metricas",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cuál es la expresión correcta de F1?",
+      "explanation": "F1 es la media armónica. También F1 = 2TP / (2TP+FP+FN). El denominador del resumen p. 69 contiene una errata.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "2 × precision × recall / (precision × recall)."
+        },
+        {
+          "id": "a",
+          "text": "2 × precision × recall / (precision + recall)."
+        },
+        {
+          "id": "c",
+          "text": "(precision + recall) / 2 siempre."
+        },
+        {
+          "id": "d",
+          "text": "TP / TN."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-107",
+      "topic": "metricas",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Si perder un caso positivo es especialmente costoso, ¿qué error interesa reducir?",
+      "explanation": "Reducir FN aumenta recall si la cantidad real de positivos permanece fija. Deben evaluarse también las consecuencias de más FP.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Verdaderos negativos."
+        },
+        {
+          "id": "d",
+          "text": "La cantidad de columnas del dataset."
+        },
+        {
+          "id": "a",
+          "text": "Falsos negativos."
+        },
+        {
+          "id": "b",
+          "text": "Verdaderos positivos."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-108",
+      "topic": "metricas",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Un clasificador con 99% de accuracy necesariamente detecta bien una clase positiva que representa solo el 1% de los datos.",
+      "explanation": "Predecir todos negativos alcanza 99% de accuracy y recall positivo cero. Compará con un baseline y métricas por clase.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-109",
+      "topic": "metricas",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué representa la curva ROC?",
+      "explanation": "FPR = 1 − especificidad. El punto ideal está en (0,1).",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Error de entrenamiento frente a épocas exclusivamente."
+        },
+        {
+          "id": "a",
+          "text": "TPR en eje vertical frente a FPR en horizontal al variar el umbral."
+        },
+        {
+          "id": "c",
+          "text": "TNR frente a MSE en un único umbral."
+        },
+        {
+          "id": "b",
+          "text": "Precision frente a cantidad de filas."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-110",
+      "topic": "metricas",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Cambiar solo el umbral de decisión modifica obligatoriamente el ROC AUC calculado a partir de los mismos scores.",
+      "explanation": "ROC AUC evalúa el ordenamiento de scores sobre umbrales. Un umbral selecciona un punto operativo, no cambia esos scores.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-111",
+      "topic": "metricas",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué indica AUC = 0,5 en el sentido habitual de discriminación por ranking?",
+      "explanation": "No debe interpretarse como una accuracy fija. AUC resume discriminación, no calibración de probabilidades.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "50% de positivos en el dataset necesariamente."
+        },
+        {
+          "id": "b",
+          "text": "Clasificación perfecta."
+        },
+        {
+          "id": "a",
+          "text": "Capacidad de ordenamiento equivalente al azar en promedio."
+        },
+        {
+          "id": "c",
+          "text": "50% de recall para todo umbral."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-112",
+      "topic": "metricas",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná los procedimientos de evaluación.",
+      "explanation": "En K-fold cada observación valida una vez y entrena K−1 veces dentro de una ronda.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Holdout",
+          "right": "Una separación entre entrenamiento y evaluación"
+        },
+        {
+          "id": "1",
+          "left": "K-fold",
+          "right": "K particiones; cada una se usa una vez para validar"
+        },
+        {
+          "id": "2",
+          "left": "LOOCV",
+          "right": "Cada observación es validación en una iteración"
+        },
+        {
+          "id": "3",
+          "left": "Splits aleatorios repetidos",
+          "right": "Varias separaciones aleatorias que pueden reutilizar observaciones"
+        }
+      ]
+    },
+    {
+      "id": "CD-113",
+      "topic": "metricas",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Para qué sirve K-fold estratificado en clasificación?",
+      "explanation": "La estratificación ayuda con clases desbalanceadas; no resuelve dependencia por tiempo o por grupos.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mantener aproximadamente las proporciones de clase en cada fold."
+        },
+        {
+          "id": "c",
+          "text": "Usar todas las etiquetas de prueba al imputar."
+        },
+        {
+          "id": "b",
+          "text": "Ordenar todas las filas por probabilidad predicha."
+        },
+        {
+          "id": "d",
+          "text": "Garantizar independencia temporal aunque se mezclen fechas."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-114",
+      "topic": "metricas",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Para predecir el futuro con una serie temporal, ¿qué validación es más defendible?",
+      "explanation": "El material advierte consideraciones especiales para series temporales. La partición debe representar el uso real.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Entrenar únicamente con datos futuros."
+        },
+        {
+          "id": "d",
+          "text": "Evaluar sobre los mismos ejemplos usados para ajustar."
+        },
+        {
+          "id": "a",
+          "text": "Entrenar con pasado y evaluar en períodos posteriores, respetando el orden."
+        },
+        {
+          "id": "b",
+          "text": "Mezclar siempre pasado y futuro al azar."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-115",
+      "topic": "metricas",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "El conjunto de prueba final debe usarse repetidamente para elegir el mejor hiperparámetro.",
+      "explanation": "Eso convierte la prueba en validación y sesga la estimación final. Reservá prueba para la evaluación una vez elegido el procedimiento.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-116",
+      "topic": "arboles",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Uní los elementos de un árbol.",
+      "explanation": "Para clasificar se recorren pruebas hasta una hoja.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Nodo interno",
+          "right": "Prueba sobre un atributo"
+        },
+        {
+          "id": "1",
+          "left": "Rama",
+          "right": "Resultado de una prueba"
+        },
+        {
+          "id": "2",
+          "left": "Hoja",
+          "right": "Clase, distribución o predicción final"
+        },
+        {
+          "id": "3",
+          "left": "Camino raíz-hoja",
+          "right": "Regla de decisión si-entonces"
+        }
+      ]
+    },
+    {
+      "id": "CD-117",
+      "topic": "arboles",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué suceso aporta mayor información −log2(p)?",
+      "explanation": "La información aumenta cuando el suceso es menos probable: −log2(1/16) = 4 bits.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Todos aportan siempre un bit."
+        },
+        {
+          "id": "a",
+          "text": "Uno con probabilidad 1/16."
+        },
+        {
+          "id": "b",
+          "text": "Uno con probabilidad 1/2."
+        },
+        {
+          "id": "c",
+          "text": "Uno con probabilidad 1."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-118",
+      "topic": "arboles",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Para k clases posibles, la entropía máxima es −log2(k).",
+      "explanation": "La cota correcta es log2(k), alcanzada con distribución uniforme. El signo negativo en esa cota de la filmina es una errata.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-119",
+      "topic": "arboles",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cuándo es cero la entropía de clase de un nodo?",
+      "explanation": "Se adopta 0 log2(0) = 0 por continuidad. Una clase con probabilidad 1 no tiene incertidumbre.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Siempre que el nodo tenga más de 10 observaciones."
+        },
+        {
+          "id": "a",
+          "text": "Cuando todos sus casos son de una sola clase."
+        },
+        {
+          "id": "c",
+          "text": "Cuando cada clase tiene igual probabilidad con k>1."
+        },
+        {
+          "id": "b",
+          "text": "Cuando hay dos clases al 50%."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-120",
+      "topic": "arboles",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué atributo elige ID3 en el paso de división?",
+      "explanation": "IG(X) = H(Y) − H(Y|X). La entropía de los hijos se pondera por sus tamaños.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "El que tenga mayor media sin usar etiquetas."
+        },
+        {
+          "id": "c",
+          "text": "El de menor cantidad de caracteres en el nombre."
+        },
+        {
+          "id": "b",
+          "text": "El primero por orden alfabético."
+        },
+        {
+          "id": "a",
+          "text": "El de mayor ganancia de información disponible."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-121",
+      "topic": "arboles",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué mide Gini = 1 − Σ pᵢ²?",
+      "explanation": "Gini vale cero en un nodo puro. Su máximo con k clases es 1−1/k.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Impureza del nodo."
+        },
+        {
+          "id": "c",
+          "text": "Correlación causal entre variables."
+        },
+        {
+          "id": "b",
+          "text": "Cantidad de archivos del dataset."
+        },
+        {
+          "id": "d",
+          "text": "Suma de errores de regresión lineal."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-122",
+      "topic": "arboles",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué puede limitar el sobreajuste de un árbol?",
+      "explanation": "Se introduce preferencia por árboles menos complejos. El costo de menor ajuste puede compensarse con mejor generalización.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Aplicar poda seleccionada mediante validación."
+        },
+        {
+          "id": "b",
+          "text": "Exigir un mínimo de observaciones por hoja."
+        },
+        {
+          "id": "d",
+          "text": "Seguir dividiendo siempre hasta memorizar cada fila."
+        },
+        {
+          "id": "a",
+          "text": "Acotar profundidad."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-123",
+      "topic": "arboles",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Un árbol sin límite de profundidad siempre logra error de entrenamiento cero, incluso con entradas idénticas y etiquetas contradictorias.",
+      "explanation": "Las observaciones idénticas con etiquetas distintas no pueden separarse usando esas mismas características. La afirmación absoluta de la filmina requiere condiciones.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-124",
+      "topic": "arboles",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná familias de árboles según la clase.",
+      "explanation": "La clase también enumera árboles por combinaciones lineales, como OC1. Se evalúa la clasificación presentada en el material.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "CART",
+          "right": "Divisiones binarias; clasificación y regresión"
+        },
+        {
+          "id": "1",
+          "left": "CLS: ID3/C4.5/C5.0",
+          "right": "Familia de algoritmos de inducción de árboles"
+        },
+        {
+          "id": "2",
+          "left": "FACT y QUEST",
+          "right": "Métodos de tipo discriminante"
+        },
+        {
+          "id": "3",
+          "left": "IND y Knowledge Seeker",
+          "right": "Modelos híbridos"
+        }
+      ]
+    },
+    {
+      "id": "CD-125",
+      "topic": "arboles",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué busca reducir QUEST según la clase?",
+      "explanation": "No debe confundirse sesgo de selección de variables con todo sesgo estadístico del modelo.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "La cantidad de filas del archivo original necesariamente."
+        },
+        {
+          "id": "c",
+          "text": "La necesidad de variable objetivo."
+        },
+        {
+          "id": "a",
+          "text": "El sesgo de selección que favorece predictores con más categorías."
+        },
+        {
+          "id": "d",
+          "text": "La suma de todos los valores de x."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-126",
+      "topic": "arboles",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "¿Por qué Random Forest suele reducir la varianza frente a un árbol individual?",
+      "explanation": "La agregación de árboles no idénticos reduce sensibilidad a una única muestra. No garantiza superar a todo modelo.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Sobreajuste: Random Forests"
+        },
+        {
+          "source": "res",
+          "locator": "Otros algoritmos, p. 60"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Combina predicciones de varios árboles con diversidad."
+        },
+        {
+          "id": "d",
+          "text": "Porque garantiza causalidad de cada variable."
+        },
+        {
+          "id": "c",
+          "text": "Porque no necesita ejemplos."
+        },
+        {
+          "id": "b",
+          "text": "Porque siempre usa un único árbol sin ramas."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-127",
+      "topic": "multiclase",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cuántos clasificadores binarios entrena One-vs-Rest para K clases?",
+      "explanation": "Cada clase se enfrenta al conjunto de todas las demás.",
+      "references": [
+        {
+          "source": "multi",
+          "locator": "One-vs-All; One-vs-One"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "K² + K."
+        },
+        {
+          "id": "b",
+          "text": "K(K−1)/2."
+        },
+        {
+          "id": "c",
+          "text": "Siempre dos."
+        },
+        {
+          "id": "a",
+          "text": "K."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-128",
+      "topic": "multiclase",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cómo se predice en One-vs-All según las filminas?",
+      "explanation": "Los clasificadores binarios independientes no forman necesariamente una distribución multiclase normalizada.",
+      "references": [
+        {
+          "source": "multi",
+          "locator": "One-vs-All; One-vs-One"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Se utiliza la media de los códigos de clase."
+        },
+        {
+          "id": "b",
+          "text": "Se exige que todas las probabilidades independientes sumen 1."
+        },
+        {
+          "id": "a",
+          "text": "Se elige la clase con el score de pertenencia mayor."
+        },
+        {
+          "id": "c",
+          "text": "Se selecciona siempre la primera clase."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-129",
+      "topic": "multiclase",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué ejemplos usa el clasificador A-vs-B de One-vs-One?",
+      "explanation": "Se entrena para separar ese par. Luego se agregan votos o se usa otro esquema definido.",
+      "references": [
+        {
+          "source": "multi",
+          "locator": "One-vs-All; One-vs-One"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Únicamente las medias de cada variable sin etiquetas."
+        },
+        {
+          "id": "a",
+          "text": "Solo los ejemplos de A y de B."
+        },
+        {
+          "id": "c",
+          "text": "Solo los ejemplos de C."
+        },
+        {
+          "id": "b",
+          "text": "Todos como positivos."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-130",
+      "topic": "multiclase",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué problemas de One-vs-One enumera el material?",
+      "explanation": "La reducción convierte el problema global multiclase en varias decisiones binarias.",
+      "references": [
+        {
+          "source": "multi",
+          "locator": "One-vs-All; One-vs-One"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantidad cuadrática de clasificadores."
+        },
+        {
+          "id": "b",
+          "text": "Pocos ejemplos para algunos pares y posible sobreajuste."
+        },
+        {
+          "id": "d",
+          "text": "Imposibilidad matemática de usar más de dos clases en el problema global."
+        },
+        {
+          "id": "c",
+          "text": "Empates de votos o dependencia del orden en torneos."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-131",
+      "topic": "multiclase",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Además de One-vs-All y One-vs-One, ¿qué alternativa menciona la clase?",
+      "explanation": "ECOC codifica clases mediante varios problemas binarios.",
+      "references": [
+        {
+          "source": "multi",
+          "locator": "One-vs-All; One-vs-One"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Solo convertir todas las etiquetas a la misma clase."
+        },
+        {
+          "id": "a",
+          "text": "Error Correcting Output Codes y métodos propios del modelo."
+        },
+        {
+          "id": "c",
+          "text": "Eliminar las clases minoritarias obligatoriamente."
+        },
+        {
+          "id": "d",
+          "text": "Usar únicamente mediana de los códigos."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-132",
+      "topic": "knn",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cómo predice KNN de clasificación no ponderado?",
+      "explanation": "Calculá distancias, ordená, seleccioná los K menores y votá. Hace falta una regla de desempate si corresponde.",
+      "references": [
+        {
+          "source": "knn",
+          "locator": "Algoritmo; ventajas; desventajas"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Por la media aritmética de las etiquetas nominales."
+        },
+        {
+          "id": "b",
+          "text": "Por la clase del punto más lejano siempre."
+        },
+        {
+          "id": "c",
+          "text": "Por un hiperplano entrenado necesariamente."
+        },
+        {
+          "id": "a",
+          "text": "Por la clase más frecuente entre los K vecinos más cercanos."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-133",
+      "topic": "knn",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "KNN es aprendizaje perezoso: conserva ejemplos y concentra trabajo al predecir.",
+      "explanation": "No ajusta un modelo paramétrico explícito como la regresión logística. La búsqueda de vecinos puede ser costosa.",
+      "references": [
+        {
+          "source": "knn",
+          "locator": "Algoritmo; ventajas; desventajas"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "true"
+      ]
+    },
+    {
+      "id": "CD-134",
+      "topic": "knn",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué elecciones influyen en KNN además del conjunto de entrenamiento?",
+      "explanation": "Aunque la filmina destaca K como parámetro, la noción de cercanía depende de distancia y representación.",
+      "references": [
+        {
+          "source": "knn",
+          "locator": "Algoritmo; ventajas; desventajas"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "K."
+        },
+        {
+          "id": "b",
+          "text": "Métrica de distancia."
+        },
+        {
+          "id": "d",
+          "text": "El orden alfabético de las etiquetas como medida física de distancia."
+        },
+        {
+          "id": "c",
+          "text": "Escalado y selección de características."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-135",
+      "topic": "knn",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Si edad varía entre 18 y 80 e ingreso entre 0 y 1.000.000, ¿qué riesgo hay con distancia euclídea sin escalar?",
+      "explanation": "Normalizar o estandarizar puede equilibrar escalas; se debe ajustar el escalado en entrenamiento.",
+      "references": [
+        {
+          "source": "knn",
+          "locator": "Algoritmo; ventajas; desventajas"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Que edad siempre domine por tener menos valores."
+        },
+        {
+          "id": "c",
+          "text": "Que KNN deje de necesitar K."
+        },
+        {
+          "id": "a",
+          "text": "Que ingreso domine la distancia por su escala."
+        },
+        {
+          "id": "d",
+          "text": "Que la distancia se vuelva una probabilidad calibrada."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-136",
+      "topic": "knn",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "La exactitud de validación aumenta necesariamente cada vez que se aumenta K.",
+      "explanation": "El material señala que el porcentaje bien clasificado no es monótono en K. Elegí K mediante validación.",
+      "references": [
+        {
+          "source": "knn",
+          "locator": "Algoritmo; ventajas; desventajas"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-137",
+      "topic": "knn",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué implica la maldición de la dimensionalidad para KNN?",
+      "explanation": "En alta dimensión los datos se dispersan y las distancias pueden perder capacidad discriminativa.",
+      "references": [
+        {
+          "source": "knn",
+          "locator": "Algoritmo; ventajas; desventajas"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Se necesitan más ejemplos para mantener vecindarios informativos al crecer la dimensión."
+        },
+        {
+          "id": "c",
+          "text": "Que no se puede usar más de una variable."
+        },
+        {
+          "id": "d",
+          "text": "Que cualquier aumento de variables reduce el costo de búsqueda."
+        },
+        {
+          "id": "b",
+          "text": "Que toda distancia mejora automáticamente."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-138",
+      "topic": "knn",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué estructuras menciona la clase para hacer más eficiente la búsqueda?",
+      "explanation": "Su conveniencia depende de dimensionalidad, métrica y necesidades de búsqueda exacta o aproximada.",
+      "references": [
+        {
+          "source": "knn",
+          "locator": "Algoritmo; ventajas; desventajas"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Solo gráficos circulares."
+        },
+        {
+          "id": "a",
+          "text": "Árboles k-d y Locality Sensitive Hashing."
+        },
+        {
+          "id": "d",
+          "text": "La función sigmoide sin índices."
+        },
+        {
+          "id": "c",
+          "text": "Exclusivamente la matriz de confusión."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-139",
+      "topic": "knn",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Con K=1 y distancia euclídea, ¿qué representación geométrica se menciona?",
+      "explanation": "Cada región está asociada al ejemplo más cercano. La frontera puede ser compleja.",
+      "references": [
+        {
+          "source": "knn",
+          "locator": "Algoritmo; ventajas; desventajas"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Una única recta global obligatoriamente."
+        },
+        {
+          "id": "a",
+          "text": "Diagrama de Voronoi."
+        },
+        {
+          "id": "c",
+          "text": "La curva ROC."
+        },
+        {
+          "id": "d",
+          "text": "La matriz de covarianza de PCA."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-140",
+      "topic": "pca",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué maximiza la primera componente principal?",
+      "explanation": "PCA se obtiene de X, sin objetivo y. La norma evita aumentar indefinidamente la varianza escalando el vector.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Reducción y PCA, pp. 7–23"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "La correlación con y obligatoriamente."
+        },
+        {
+          "id": "b",
+          "text": "La suma de las etiquetas de clasificación."
+        },
+        {
+          "id": "c",
+          "text": "La cantidad de grupos elegida."
+        },
+        {
+          "id": "a",
+          "text": "La varianza de la proyección con vector de loadings de norma 1."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-141",
+      "topic": "pca",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Normalizar el vector de loadings de PCA exige que la suma de sus coeficientes sea 1.",
+      "explanation": "La restricción correcta es suma de cuadrados de coeficientes igual a 1, o norma euclídea igual a 1.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Reducción y PCA, pp. 7–23"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-142",
+      "topic": "pca",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué representan los autovalores de la matriz de covarianza en PCA?",
+      "explanation": "Los autovectores dan direcciones; los autovalores dan varianzas, ordenadas de mayor a menor.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Reducción y PCA, pp. 7–23"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Las etiquetas verdaderas."
+        },
+        {
+          "id": "d",
+          "text": "Los errores de clasificación de cada fila."
+        },
+        {
+          "id": "c",
+          "text": "La cantidad de vecinos de KNN."
+        },
+        {
+          "id": "a",
+          "text": "La varianza explicada por las componentes correspondientes."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-143",
+      "topic": "pca",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Las componentes principales son combinaciones de las variables originales y sus direcciones son ortogonales.",
+      "explanation": "La matriz de covarianza simétrica permite elegir autovectores ortonormales; los scores resultantes quedan no correlacionados.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Reducción y PCA, pp. 7–23"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "true"
+      ]
+    },
+    {
+      "id": "CD-144",
+      "topic": "pca",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué diferencia hay entre loading y score en PCA?",
+      "explanation": "Para una componente, zᵢ = xᵢᵀφ usando los datos centrados y, si se decide, escalados.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Reducción y PCA, pp. 7–23"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Loading es un peso de la dirección; score es la coordenada proyectada de una observación."
+        },
+        {
+          "id": "c",
+          "text": "Loading es la accuracy y score es el recall."
+        },
+        {
+          "id": "d",
+          "text": "Score es el autovalor de toda variable original."
+        },
+        {
+          "id": "b",
+          "text": "Ambos son siempre etiquetas de clase."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-145",
+      "topic": "pca",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Por qué el escalado puede cambiar las componentes principales?",
+      "explanation": "Centrar y escalar son operaciones distintas. Estandarizar puede evitar que una unidad grande domine la variación.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Reducción y PCA, pp. 7–23"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Porque PCA usa siempre las etiquetas."
+        },
+        {
+          "id": "a",
+          "text": "PCA depende de varianzas y covarianzas, que dependen de las unidades."
+        },
+        {
+          "id": "c",
+          "text": "Porque convierte necesariamente toda matriz en identidad."
+        },
+        {
+          "id": "d",
+          "text": "Porque el número de filas pasa a ser cero."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-146",
+      "topic": "pca",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Descartar componentes de baja varianza garantiza conservar toda la información predictiva de y.",
+      "explanation": "Una dirección de baja varianza puede ser útil para predecir o detectar anomalías. La clase advierte esa posibilidad.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Reducción y PCA, pp. 7–23"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-147",
+      "topic": "pca",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Si se conservan p componentes linealmente independientes de p variables, ¿qué reducción de dimensión se logró?",
+      "explanation": "Es un cambio de base de dimensión completa. La reducción exige conservar M < p direcciones.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Reducción y PCA, pp. 7–23"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ninguna."
+        },
+        {
+          "id": "c",
+          "text": "Se borraron todas las variables."
+        },
+        {
+          "id": "d",
+          "text": "Se obtuvo un clasificador binario."
+        },
+        {
+          "id": "b",
+          "text": "Siempre se redujo a una dimensión."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-148",
+      "topic": "clustering",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué caracteriza un buen agrupamiento según la clase?",
+      "explanation": "Se busca cohesión interna y separación externa, con una definición de similitud adecuada al dominio.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Grupos idénticos y sin diferencias."
+        },
+        {
+          "id": "a",
+          "text": "Alta similaridad interna y baja similaridad entre grupos."
+        },
+        {
+          "id": "c",
+          "text": "Etiquetas objetivo obligatorias en entrenamiento."
+        },
+        {
+          "id": "d",
+          "text": "Máxima distancia dentro de cada grupo."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-149",
+      "topic": "clustering",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Los clusters obtenidos son necesariamente las clases verdaderas de la población.",
+      "explanation": "La agrupación depende de variables, escalas, métrica y algoritmo. Debe interpretarse y validarse con conocimiento de dominio.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-150",
+      "topic": "clustering",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná las familias de clustering.",
+      "explanation": "Distintas definiciones de grupo pueden destacar estructuras diferentes.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Jerárquico",
+          "right": "Construye una estructura de fusiones o divisiones"
+        },
+        {
+          "id": "1",
+          "left": "Basado en centroides",
+          "right": "Representa grupos mediante centros"
+        },
+        {
+          "id": "2",
+          "left": "Basado en distribuciones",
+          "right": "Modela distribuciones probabilísticas"
+        },
+        {
+          "id": "3",
+          "left": "Basado en densidad",
+          "right": "Identifica regiones densas, como DBSCAN"
+        }
+      ]
+    },
+    {
+      "id": "CD-151",
+      "topic": "clustering",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Cómo comienza el jerárquico aglomerativo descrito?",
+      "explanation": "Luego fusiona el par de grupos menos disímil y actualiza las disimilitudes.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Con cada observación como su propio cluster."
+        },
+        {
+          "id": "d",
+          "text": "Con K centroides calculados por regresión logística."
+        },
+        {
+          "id": "c",
+          "text": "Con todos los puntos descartados."
+        },
+        {
+          "id": "b",
+          "text": "Con etiquetas verdaderas preasignadas."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-152",
+      "topic": "clustering",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Uní cada linkage con su criterio.",
+      "explanation": "La misma matriz de distancias puede generar dendrogramas distintos al cambiar el enlace.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Single",
+          "right": "Mínima distancia entre puntos de los dos grupos"
+        },
+        {
+          "id": "1",
+          "left": "Complete",
+          "right": "Máxima distancia entre puntos de los dos grupos"
+        },
+        {
+          "id": "2",
+          "left": "Average",
+          "right": "Promedio de distancias entre pares de grupos"
+        },
+        {
+          "id": "3",
+          "left": "Centroid",
+          "right": "Distancia entre los vectores medios de los grupos"
+        }
+      ]
+    },
+    {
+      "id": "CD-153",
+      "topic": "clustering",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué indica la altura de una fusión en el dendrograma?",
+      "explanation": "Un corte a cierta altura define una partición. Las alturas se interpretan con el método y métrica elegidos.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "La accuracy en test obligatoriamente."
+        },
+        {
+          "id": "a",
+          "text": "La disimilitud de los grupos fusionados según el enlace."
+        },
+        {
+          "id": "d",
+          "text": "El número de columnas de la base siempre."
+        },
+        {
+          "id": "c",
+          "text": "La media de las etiquetas verdaderas."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-154",
+      "topic": "clustering",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué efecto suele producir Single Linkage?",
+      "explanation": "La mínima distancia puede unir regiones mediante cadenas de puntos próximos.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Encadenamiento y grupos alargados."
+        },
+        {
+          "id": "c",
+          "text": "Centroides que siempre son observaciones."
+        },
+        {
+          "id": "b",
+          "text": "Solo grupos esféricos idénticos."
+        },
+        {
+          "id": "d",
+          "text": "Eliminación de todo ruido por definición."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-155",
+      "topic": "clustering",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué minimiza K-means estándar?",
+      "explanation": "Es WCSS. La asignación y la actualización alternan hasta un criterio de parada.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "La entropía de las etiquetas conocidas."
+        },
+        {
+          "id": "c",
+          "text": "La distancia máxima entre todos los grupos únicamente."
+        },
+        {
+          "id": "d",
+          "text": "La pérdida logística."
+        },
+        {
+          "id": "a",
+          "text": "La suma de distancias euclídeas al cuadrado a los centroides del grupo."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-156",
+      "topic": "clustering",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná los pasos de K-means.",
+      "explanation": "Se repiten ambos pasos. La inicialización influye en el óptimo local obtenido.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Asignación",
+          "right": "Enviar cada observación al centroide más cercano"
+        },
+        {
+          "id": "1",
+          "left": "Actualización",
+          "right": "Recalcular cada centroide como media de su grupo"
+        }
+      ]
+    },
+    {
+      "id": "CD-157",
+      "topic": "clustering",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "K-means garantiza encontrar el mínimo global con cualquier inicialización.",
+      "explanation": "Puede terminar en óptimos locales. Reinicios y selección de la mejor solución observada ayudan, sin convertirlo en garantía global.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-158",
+      "topic": "clustering",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué busca el método del codo?",
+      "explanation": "Es una heurística que puede ser ambigua. Debe complementarse con interpretación y validación.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Un máximo de la cantidad de etiquetas."
+        },
+        {
+          "id": "c",
+          "text": "Garantizar una única K verdadera en todo dataset."
+        },
+        {
+          "id": "d",
+          "text": "Minimizar el número de filas."
+        },
+        {
+          "id": "a",
+          "text": "Un punto a partir del cual aumentar K reduce WCSS mucho menos."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-159",
+      "topic": "clustering",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "En una partición K-means estándar cada observación pertenece a un único grupo.",
+      "explanation": "Los grupos son mutuamente excluyentes y cubren las observaciones asignadas; no son pertenencias probabilísticas.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "true"
+      ]
+    },
+    {
+      "id": "CD-160",
+      "topic": "clustering",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué distingue un medoid de un centroide?",
+      "explanation": "PAM considera intercambiar medoids y no medoids para reducir el costo de distancias.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "El medoid siempre es la media aritmética."
+        },
+        {
+          "id": "a",
+          "text": "El medoid es una observación del dataset; el centroide es una media y puede no coincidir con una observación."
+        },
+        {
+          "id": "d",
+          "text": "El centroide necesariamente es un punto observado."
+        },
+        {
+          "id": "b",
+          "text": "Ambos son siempre etiquetas binarias."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-161",
+      "topic": "clustering",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué parámetros principales requiere DBSCAN?",
+      "explanation": "ε define el vecindario y minPts el mínimo para ser núcleo. En esta convención el punto cuenta dentro de su propio vecindario.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "La cantidad K de grupos obligatoriamente."
+        },
+        {
+          "id": "c",
+          "text": "Solo el número de clases verdaderas."
+        },
+        {
+          "id": "a",
+          "text": "ε y minPts."
+        },
+        {
+          "id": "d",
+          "text": "Los pesos de la sigmoide."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-162",
+      "topic": "clustering",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "Relacioná los puntos de DBSCAN.",
+      "explanation": "Un punto marcado ruido al principio puede luego ser incorporado como borde. Ruido provisional no siempre significa ruido definitivo.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "Núcleo",
+          "right": "Su vecindario contiene al menos minPts puntos, contando al propio punto"
+        },
+        {
+          "id": "1",
+          "left": "Borde",
+          "right": "No es núcleo pero está dentro del vecindario de un núcleo"
+        },
+        {
+          "id": "2",
+          "left": "Ruido final",
+          "right": "No pertenece a un grupo alcanzable desde un núcleo"
+        }
+      ]
+    },
+    {
+      "id": "CD-163",
+      "topic": "clustering",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "En DBSCAN un punto de borde puede extender la expansión como si fuese núcleo.",
+      "explanation": "La expansión se propaga mediante puntos núcleo. Los bordes pueden incorporarse sin originar nueva expansión.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "CD-164",
+      "topic": "clustering",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "nueva",
+      "points": 1,
+      "prompt": "¿Qué aspectos conviene revisar al interpretar clusters?",
+      "explanation": "No existe una única mejor agrupación universal; validá que la estructura tenga sentido para la pregunta.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "b",
+          "text": "Métrica, algoritmo y cantidad de grupos si corresponde."
+        },
+        {
+          "id": "a",
+          "text": "Variables y escalas utilizadas."
+        },
+        {
+          "id": "d",
+          "text": "Solo el color que se asignó en el gráfico."
+        },
+        {
+          "id": "c",
+          "text": "Utilidad, estabilidad e interpretación de dominio."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "id": "CD-165",
+      "topic": "estadistica",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Calculá la media aritmética de [3, 7, 8, 10].",
+      "explanation": "Suma = 28; n = 4. Media = 7.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 2, pregunta 3; variante numérica"
+        }
+      ],
+      "answer": 7.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-166",
+      "topic": "estadistica",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Calculá la media aritmética de [2, 4, 4, 6, 9].",
+      "explanation": "Suma = 25; n = 5. Media = 5.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 2, pregunta 3; variante numérica"
+        }
+      ],
+      "answer": 5.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-167",
+      "topic": "estadistica",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Calculá la media aritmética de [5, 8, 12, 15, 20].",
+      "explanation": "Suma = 60; n = 5. Media = 12.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 2, pregunta 3; variante numérica"
+        }
+      ],
+      "answer": 12.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-168",
+      "topic": "estadistica",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Calculá la mediana de [2, 4, 10, 16].",
+      "explanation": "Los datos ya están ordenados. La mediana es 7.0.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "preguntas 1 y 8; variante numérica"
+        }
+      ],
+      "answer": 7.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-169",
+      "topic": "estadistica",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Calculá la mediana de [1, 3, 5, 7, 40].",
+      "explanation": "Los datos ya están ordenados. La mediana es 5.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "preguntas 1 y 8; variante numérica"
+        }
+      ],
+      "answer": 5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-170",
+      "topic": "preprocesamiento",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Min-Max a [0,1]: x=30, mínimo=10 y máximo=50. ¿Cuál es el valor transformado?",
+      "explanation": "(30−10)/(50−10) = 20/40 = 0,5.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "answer": 0.5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-171",
+      "topic": "preprocesamiento",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Z-score: x=70, media=50 y desviación estándar=10. Calculá el resultado.",
+      "explanation": "(70−50)/10 = 2.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "answer": 2,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-172",
+      "topic": "preprocesamiento",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Ajuste decimal: los valores son −320, 40 y 95. Usá el menor entero j que dé max(|x/10^j|)<1. ¿Qué valor toma −320?",
+      "explanation": "j=3, porque 320/1000=0,32<1 y 320/100=3,2≥1.",
+      "references": [
+        {
+          "source": "prep",
+          "locator": "Limpieza; integración; transformación; reducción"
+        }
+      ],
+      "answer": -0.32,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-173",
+      "topic": "lineal",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Dado ŷ=3+2x, ¿cuál es la predicción para x=4?",
+      "explanation": "3 + 2×4 = 11.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "answer": 11,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-174",
+      "topic": "lineal",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Dado ŷ=1+2x1−3x2, x1=4 y x2=2, calculá ŷ.",
+      "explanation": "1+8−6=3.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "answer": 3,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-175",
+      "topic": "lineal",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Valores reales [2,4] y predicciones [1,6]. Calculá el MSE.",
+      "explanation": "Residuos [1,−2]. MSE=(1²+(−2)²)/2=2,5.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "answer": 2.5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-176",
+      "topic": "lineal",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Si el MSE es 9, ¿cuál es el RMSE?",
+      "explanation": "RMSE = √9 = 3, en las unidades de la variable objetivo.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "answer": 3,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-177",
+      "topic": "lineal",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Con SSE=20 y SST=100, calculá R².",
+      "explanation": "R² = 1−20/100 = 0,8.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "answer": 0.8,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-178",
+      "topic": "lineal",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Para n=30 y 4 parámetros estimados incluyendo el intercepto, ¿cuántos grados de libertad residuales hay?",
+      "explanation": "Grados de libertad residuales = n−k = 30−4 = 26.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Grados de libertad, p. 52"
+        }
+      ],
+      "answer": 26,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-179",
+      "topic": "lineal",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Pesos penalizados [−2,3], sin intercepto. ¿Cuánto vale la suma L1 antes de multiplicar por λ?",
+      "explanation": "|−2|+|3|=5.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "answer": 5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-180",
+      "topic": "lineal",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Pesos penalizados [−2,3], sin intercepto. ¿Cuánto vale la suma L2 de cuadrados antes de multiplicar por λ?",
+      "explanation": "(−2)²+3²=4+9=13.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "answer": 13,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-181",
+      "topic": "logistica",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Si z=ln(3), calculá g(z)=1/(1+e^(−z)).",
+      "explanation": "e^(−ln 3)=1/3; g=1/(1+1/3)=0,75.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "answer": 0.75,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-182",
+      "topic": "logistica",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Si P(y=1|x)=0,72 en clasificación binaria, ¿cuánto vale P(y=0|x)?",
+      "explanation": "1−0,72 = 0,28.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "answer": 0.28,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-183",
+      "topic": "logistica",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Con p=0,8, calculá los odds p/(1−p).",
+      "explanation": "0,8/0,2=4. Odds no es probabilidad.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "answer": 4,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-184",
+      "topic": "logistica",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Para y=1 y p=0,8, calculá la pérdida con logaritmo natural. Redondeá a 3 decimales.",
+      "explanation": "−ln(0,8) ≈ 0,223. Acierto de clase no implica costo cero.",
+      "references": [
+        {
+          "source": "log",
+          "locator": "Hipótesis; frontera; interpretación; costo; regularización"
+        }
+      ],
+      "answer": 0.2231435513142097,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-185",
+      "topic": "metricas",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "TP=7, FN=1, FP=2 y TN=6. Calculá accuracy como proporción entre 0 y 1, no porcentaje.",
+      "explanation": "(7+6)/16=0,8125.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "answer": 0.8125,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-186",
+      "topic": "metricas",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "TP=7, FN=1, FP=2 y TN=6. Calculá precision como proporción entre 0 y 1, no porcentaje.",
+      "explanation": "7/(7+2)=0,777778.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "answer": 0.7777777777777778,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-187",
+      "topic": "metricas",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "TP=7, FN=1, FP=2 y TN=6. Calculá recall como proporción entre 0 y 1, no porcentaje.",
+      "explanation": "7/(7+1)=0,875.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "answer": 0.875,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-188",
+      "topic": "metricas",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "TP=7, FN=1, FP=2 y TN=6. Calculá especificidad como proporción entre 0 y 1, no porcentaje.",
+      "explanation": "6/(6+2)=0,75.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "answer": 0.75,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-189",
+      "topic": "metricas",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "TP=7, FN=1, FP=2 y TN=6. Calculá FPR como proporción entre 0 y 1, no porcentaje.",
+      "explanation": "2/(2+6)=0,25.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "answer": 0.25,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-190",
+      "topic": "metricas",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "TP=7, FN=1, FP=2 y TN=6. Calculá FNR como proporción entre 0 y 1, no porcentaje.",
+      "explanation": "1/(1+7)=0,125.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "answer": 0.125,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-191",
+      "topic": "metricas",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "TP=7, FN=1, FP=2 y TN=6. Calculá F1 como proporción entre 0 y 1, no porcentaje.",
+      "explanation": "2×7/(2×7+2+1)=14/17≈0,823529.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "answer": 0.8235294117647058,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-192",
+      "topic": "metricas",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Se hace K-fold con K=5 sobre 100 observaciones, con folds de igual tamaño. ¿Cuántas se usan para entrenar en cada iteración?",
+      "explanation": "100/5=20 para validar y 80 para entrenar.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "answer": 80,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-193",
+      "topic": "metricas",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "LOOCV con 24 observaciones: ¿cuántos modelos se ajustan en una ronda?",
+      "explanation": "Uno por observación dejada afuera: n=24 modelos.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "answer": 24,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-194",
+      "topic": "arboles",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Un evento tiene p=1/8. Calculá su información en bits.",
+      "explanation": "−log2(1/8)=3.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "answer": 3,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-195",
+      "topic": "arboles",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Nodo binario con probabilidades 0,5 y 0,5. Calculá su entropía en bits.",
+      "explanation": "−0,5 log2(0,5)−0,5 log2(0,5)=1.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "answer": 1,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-196",
+      "topic": "arboles",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Un nodo tiene 3 casos de clase A y 2 de B. Calculá Gini.",
+      "explanation": "1−(3/5)²−(2/5)²=1−0,36−0,16=0,48.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "answer": 0.48,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-197",
+      "topic": "arboles",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "H(Y)=1. Una división genera 2 hijos del mismo tamaño: uno puro y otro de entropía 1. Calculá IG.",
+      "explanation": "H(Y|X)=0,5×0+0,5×1=0,5; IG=1−0,5=0,5.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "answer": 0.5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-198",
+      "topic": "arboles",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Con 4 clases equiprobables, calculá la entropía máxima en bits.",
+      "explanation": "log2(4)=2 bits. La cota es positiva.",
+      "references": [
+        {
+          "source": "tree",
+          "locator": "Teoría de información; ID3; sobreajuste; familias"
+        }
+      ],
+      "answer": 2,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-199",
+      "topic": "multiclase",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Con 6 clases, ¿cuántos clasificadores One-vs-One se entrenan?",
+      "explanation": "6×5/2=15.",
+      "references": [
+        {
+          "source": "multi",
+          "locator": "One-vs-All; One-vs-One"
+        }
+      ],
+      "answer": 15,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-200",
+      "topic": "multiclase",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Con 7 clases, ¿cuántos clasificadores One-vs-Rest se entrenan?",
+      "explanation": "Uno por clase: 7.",
+      "references": [
+        {
+          "source": "multi",
+          "locator": "One-vs-All; One-vs-One"
+        }
+      ],
+      "answer": 7,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-201",
+      "topic": "knn",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Calculá la distancia euclídea entre (1,2) y (4,6).",
+      "explanation": "√((4−1)²+(6−2)²)=√25=5.",
+      "references": [
+        {
+          "source": "knn",
+          "locator": "Algoritmo; ventajas; desventajas"
+        }
+      ],
+      "answer": 5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-202",
+      "topic": "knn",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Calculá la distancia Manhattan entre (1,2) y (4,6).",
+      "explanation": "|4−1|+|6−2|=3+4=7.",
+      "references": [
+        {
+          "source": "knn",
+          "locator": "Algoritmo; ventajas; desventajas"
+        }
+      ],
+      "answer": 7,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-203",
+      "topic": "knn",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Vecinos ordenados por distancia: A a 1, B a 2, B a 3, A a 4 y A a 5. Con K=3 y voto uniforme, ¿qué se predice?",
+      "explanation": "Entre los tres vecinos seleccionados hay dos B y un A. Los otros dos no votan.",
+      "references": [
+        {
+          "source": "knn",
+          "locator": "Algoritmo; ventajas; desventajas"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "No se puede decidir porque hay 5 datos."
+        },
+        {
+          "id": "b",
+          "text": "A."
+        },
+        {
+          "id": "c",
+          "text": "Empate."
+        },
+        {
+          "id": "a",
+          "text": "B."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-204",
+      "topic": "pca",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Autovalores ordenados [6,3,1]. ¿Qué proporción de varianza explican las dos primeras componentes?",
+      "explanation": "(6+3)/(6+3+1)=9/10=0,9.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Reducción y PCA, pp. 7–23"
+        }
+      ],
+      "answer": 0.9,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-205",
+      "topic": "pca",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "X centrado de una observación = (2,−1); loading unitario = (0,6;0,8). Calculá el score.",
+      "explanation": "2×0,6−1×0,8=0,4. La norma del loading es √(0,36+0,64)=1.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Reducción y PCA, pp. 7–23"
+        }
+      ],
+      "answer": 0.4,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-206",
+      "topic": "clustering",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "En una dimensión, un grupo contiene [2,4,9]. Calculá el centroide de K-means.",
+      "explanation": "(2+4+9)/3=5.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "answer": 5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-207",
+      "topic": "clustering",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Un cluster unidimensional tiene puntos [2,4] y centroide 3. Calculá su WCSS.",
+      "explanation": "(2−3)²+(4−3)²=1+1=2.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "answer": 2,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-208",
+      "topic": "clustering",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Distancias cruzadas entre dos grupos: [2,5,3,8]. Calculá Complete Linkage.",
+      "explanation": "Complete usa el máximo de todas las distancias cruzadas: 8.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "answer": 8,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-209",
+      "topic": "clustering",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Distancias cruzadas entre dos grupos: [2,5,3,8]. Calculá Average Linkage.",
+      "explanation": "(2+5+3+8)/4=18/4=4,5.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "answer": 4.5,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-210",
+      "topic": "clustering",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Distancias cruzadas entre dos grupos: [2,5,3,8]. Calculá Single Linkage.",
+      "explanation": "Single usa el mínimo: 2.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "answer": 2,
+      "tolerance": 0.001
+    },
+    {
+      "id": "CD-211",
+      "topic": "clustering",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "En DBSCAN con minPts=4, un punto tiene a otros tres a distancia ≤ε. Contando al propio punto, es:",
+      "explanation": "Su vecindario tiene 4 puntos incluido él. Cumple minPts.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "options": [
+        {
+          "id": "c",
+          "text": "Borde necesariamente."
+        },
+        {
+          "id": "b",
+          "text": "Ruido necesariamente."
+        },
+        {
+          "id": "a",
+          "text": "Núcleo."
+        },
+        {
+          "id": "d",
+          "text": "Centroide de K-means."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "CD-212",
+      "topic": "proyectos",
+      "type": "essay",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Diseñá un ciclo DDS para investigar deserción estudiantil. Indicá pregunta, artefacto, observación y decisión posterior.",
+      "explanation": "Ejemplo: preguntar si variables socioeconómicas aportan señal; crear un modelo baseline; comparar con validación adecuada; analizar errores y utilidad con el PO. No asumir que correlación implica causalidad.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "rubric": [
+        "Definir una pregunta concreta vinculada con deserción.",
+        "Crear un artefacto mínimo pertinente.",
+        "Definir evidencia de observación y cómo obtenerla.",
+        "Analizar resultados para decidir el próximo paso."
+      ]
+    },
+    {
+      "id": "CD-213",
+      "topic": "etl",
+      "type": "essay",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Tenés legajos inconsistentes, fechas heterogéneas y nulos en varias regionales. Proponé un flujo ETL verificable.",
+      "explanation": "Separá extracción, transformación y carga. Registrá reglas, valores rechazados y métricas de calidad; contrastá resultados con el dominio.",
+      "references": [
+        {
+          "source": "etl",
+          "locator": "Extracción, transformación y carga; almacenes de datos"
+        }
+      ],
+      "rubric": [
+        "Identificar fuentes, documentar extracción y conservar trazabilidad.",
+        "Normalizar identificadores y formatos sin perder significado.",
+        "Investigar faltantes y duplicados antes de tratarlos.",
+        "Validar claves, conteos y calidad al cargar."
+      ]
+    },
+    {
+      "id": "CD-214",
+      "topic": "metricas",
+      "type": "essay",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Un detector tiene 99% de accuracy y recall positivo 0. Explicá el problema y proponé una evaluación mejor.",
+      "explanation": "La accuracy puede ocultar fracaso sobre la clase de interés. La decisión depende de consecuencias y de datos representativos, no de una métrica aislada.",
+      "references": [
+        {
+          "source": "met",
+          "locator": "Matriz de confusión; métricas; ROC; evaluación cruzada"
+        }
+      ],
+      "rubric": [
+        "Reconocer posible desbalance y baseline todos negativos.",
+        "Interpretar recall 0 como ningún positivo detectado.",
+        "Revisar matriz, precision, recall y costos de FP/FN.",
+        "Seleccionar umbral con validación y reservar prueba."
+      ]
+    },
+    {
+      "id": "CD-215",
+      "topic": "clustering",
+      "type": "essay",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Compará K-means, jerárquico y DBSCAN para grupos alargados, ruido y número de grupos desconocido.",
+      "explanation": "DBSCAN puede captar formas no esféricas y ruido, pero depende de densidades y parámetros. Jerárquico ofrece niveles; K-means requiere K y favorece grupos compactos. No hay ganador universal.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Agrupamiento, pp. 25–75"
+        }
+      ],
+      "rubric": [
+        "Explicar WCSS, centroides y K de K-means.",
+        "Explicar dendrograma y efecto del linkage.",
+        "Explicar densidad, ε, minPts y ruido en DBSCAN.",
+        "Justificar elección con escalas, variables y dominio."
+      ]
+    },
+    {
+      "id": "CD-216",
+      "topic": "lineal",
+      "type": "essay",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "El resumen sugiere seleccionar el modelo final con datos de prueba. Reformulá el procedimiento para obtener una estimación final honesta.",
+      "explanation": "Usá validación o validación cruzada para selección. Test queda reservado al procedimiento ya elegido. Revisarlo repetidamente para elegir contamina su función.",
+      "references": [
+        {
+          "source": "res",
+          "locator": "Regresión lineal, pp. 47–60"
+        }
+      ],
+      "rubric": [
+        "Separar entrenamiento, validación y prueba final o esquema equivalente.",
+        "Aprender preprocesamiento dentro de entrenamiento/folds.",
+        "Elegir hiperparámetros solo con validación.",
+        "Evaluar una vez en prueba y describir las limitaciones."
+      ]
+    },
+    {
+      "id": "CD-217",
+      "topic": "pca",
+      "type": "essay",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Proponé un flujo PCA más clasificación sin fuga de información y explicá cómo elegir M.",
+      "explanation": "La varianza explicada no equivale a utilidad predictiva. PCA no utiliza y, pero ajustarlo con prueba revela información de su distribución.",
+      "references": [
+        {
+          "source": "unsup",
+          "locator": "Reducción y PCA, pp. 7–23"
+        }
+      ],
+      "rubric": [
+        "Separar los datos antes de ajustar transformaciones.",
+        "Ajustar centrado, escalado y PCA solo con entrenamiento en cada fold.",
+        "Elegir M usando varianza y validación del objetivo predictivo.",
+        "Aplicar transformaciones aprendidas y evaluar una vez en prueba."
+      ]
+    }
+  ],
+  "notes": [
+    "Basado en 11 materiales de clase/artículo DDS, resumen y dos evaluaciones. Libro de Bonaccorso: referencia adicional identificada, no auditada íntegramente ni incluida como temario completo.",
+    "Históricas: transcripción de enunciados/opciones con correcciones de ortografía y normalización; se conserva la clave visible. Las dos preguntas de emparejamiento del experto no muestran una clave fiable y no se reproducen como preguntas con respuesta oficial.",
+    "Simulacro mixto: modalidades observadas, duración configurable y puntuación de práctica explícita. No replica ajustes ocultos de Moodle ni predice el parcial futuro.",
+    "Unidad 3 tiene solo un índice en el resumen; las preguntas de gráficos son ampliaciones señaladas. Minería de texto aparece solo como título: no se inventa contenido evaluable. El libro completo no define el alcance del parcial."
+  ]
+}

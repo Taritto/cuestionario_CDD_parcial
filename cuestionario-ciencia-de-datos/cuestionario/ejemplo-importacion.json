@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "title": "Ejemplo de ampliación: seis tipos de pregunta",
+  "topics": [
+    {
+      "id": "fundamentos",
+      "title": "Fundamentos y aprendizaje"
+    },
+    {
+      "id": "proyectos",
+      "title": "KDD, CRISP-DM y DDS"
+    },
+    {
+      "id": "etl",
+      "title": "ETL y arquitectura de datos"
+    },
+    {
+      "id": "preprocesamiento",
+      "title": "Preprocesamiento y calidad"
+    },
+    {
+      "id": "estadistica",
+      "title": "Estadística y visualización"
+    },
+    {
+      "id": "lineal",
+      "title": "Regresión lineal y regularización"
+    },
+    {
+      "id": "logistica",
+      "title": "Regresión logística"
+    },
+    {
+      "id": "metricas",
+      "title": "Métricas y validación"
+    },
+    {
+      "id": "arboles",
+      "title": "Árboles de decisión"
+    },
+    {
+      "id": "multiclase",
+      "title": "Clasificación multiclase"
+    },
+    {
+      "id": "knn",
+      "title": "K vecinos más cercanos"
+    },
+    {
+      "id": "pca",
+      "title": "Reducción de dimensión y PCA"
+    },
+    {
+      "id": "clustering",
+      "title": "Clustering"
+    },
+    {
+      "id": "caso",
+      "title": "Caso UTN y parciales anteriores"
+    }
+  ],
+  "sources": [
+    {
+      "id": "gestion",
+      "title": "CD_01_Introduccion_Gestion_de_Proyectos.pdf",
+      "url": "https://drive.google.com/file/d/1Q2Mc3DlGtr3YT9yCh-0ukeWtHF224CD_/view"
+    },
+    {
+      "id": "ml",
+      "title": "CD_01_Aprendizaje Automatico.pdf",
+      "url": "https://drive.google.com/file/d/18MNOGsN5x3jgVhJLRv--uhYXSCjfxy1Z/view"
+    },
+    {
+      "id": "etl",
+      "title": "CD_02_02_ETL.pdf",
+      "url": "https://drive.google.com/file/d/1PTaAywUgP9FuM3p65z-MPym48R44WEFm/view"
+    },
+    {
+      "id": "prep",
+      "title": "CD_02_03_Preprocesamiento.pdf",
+      "url": "https://drive.google.com/file/d/18wmKHzjBF6nSgI5hzZ1qVu3PXjHcJdJh/view"
+    },
+    {
+      "id": "log",
+      "title": "CD_04_02_01_RegresionLogistica.pdf",
+      "url": "https://drive.google.com/file/d/1lEEQTASHrZbanMADS90DrAxqCUFd37JJ/view"
+    },
+    {
+      "id": "met",
+      "title": "CD_04_02_02_Metricas.pdf",
+      "url": "https://drive.google.com/file/d/1N5IR90ywUc-ZAQSWeTUKOAdX3A-tj_CN/view"
+    },
+    {
+      "id": "tree",
+      "title": "CD_04_02_03_ArbolesDeDecision.pdf",
+      "url": "https://drive.google.com/file/d/1jp7xRJwjjearDt4wINU_zjgsZ8Z7Tdbn/view"
+    },
+    {
+      "id": "multi",
+      "title": "CD_04_02_04_ClasificacionMulticlase.pdf",
+      "url": "https://drive.google.com/file/d/1yVG8G-waJ8Wp0HP3fZqeXBl_SnGfBerR/view"
+    },
+    {
+      "id": "knn",
+      "title": "CD_04_02_05_KNN.pdf",
+      "url": "https://drive.google.com/file/d/1gq854mDIDiNQxhcDkhVW3TeFpljyaN2E/view"
+    },
+    {
+      "id": "unsup",
+      "title": "CD_04_03_AprendizajeNoSupervisado.pdf",
+      "url": "https://drive.google.com/file/d/1ggjyc_ilPjGPbBaDP6HVjgK24mx05MNP/view"
+    },
+    {
+      "id": "dds",
+      "title": "Achieving Lean Data Science Agility Via Data Driven Scrum_0711.pdf",
+      "url": "https://drive.google.com/file/d/1jcUul1XTEpsVUjJBjfWEKbnJDWuyoffk/view"
+    },
+    {
+      "id": "res",
+      "title": "RESUMEN CIENCIA DE DATOS.pdf",
+      "url": "https://drive.google.com/file/d/1IwpAEpBqh8LKL3yi9CkQRcSrl86SgeZn/view"
+    },
+    {
+      "id": "parcial",
+      "title": "parcial primer cuatri.pdf",
+      "url": "https://drive.google.com/file/d/17jbLE39cjGoVKGIIJGqZ_cvASwcRCI8X/view"
+    },
+    {
+      "id": "experto",
+      "title": "Evaluación Formativa 24/04/2026 - Visita de Experto",
+      "url": "https://drive.google.com/file/d/1_VE98bS5uPIYRTI9dHxrTMerYLzst1Er/view"
+    }
+  ],
+  "questions": [
+    {
+      "id": "EXTRA-001",
+      "topic": "fundamentos",
+      "type": "single",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "¿Qué diferencia a la estadística inferencial de la descriptiva?",
+      "explanation": "La descriptiva resume lo observado; la inferencial estima y contrasta sobre una población usando una muestra.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Conceptos básicos; fundamentos del aprendizaje automático"
+        }
+      ],
+      "options": [
+        {
+          "id": "d",
+          "text": "Siempre conoce todos los valores poblacionales."
+        },
+        {
+          "id": "a",
+          "text": "Generaliza desde una muestra hacia una población con incertidumbre."
+        },
+        {
+          "id": "c",
+          "text": "No utiliza probabilidades."
+        },
+        {
+          "id": "b",
+          "text": "Solo organiza datos en tablas."
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "EXTRA-002",
+      "topic": "fundamentos",
+      "type": "multiple",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Seleccioná tareas mencionadas para aprendizaje no supervisado.",
+      "explanation": "Se buscan estructuras o patrones sin disponer de la salida objetivo para cada observación.",
+      "references": [
+        {
+          "source": "ml",
+          "locator": "Aprendizaje no supervisado"
+        }
+      ],
+      "options": [
+        {
+          "id": "e",
+          "text": "Clasificación supervisada con todas las etiquetas conocidas."
+        },
+        {
+          "id": "c",
+          "text": "Reducción de dimensionalidad."
+        },
+        {
+          "id": "d",
+          "text": "Detección de anomalías sin etiquetas."
+        },
+        {
+          "id": "b",
+          "text": "Reglas de asociación."
+        },
+        {
+          "id": "a",
+          "text": "Clustering."
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "id": "EXTRA-003",
+      "topic": "fundamentos",
+      "type": "truefalse",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Minería de datos y KDD designan exactamente el mismo proceso completo.",
+      "explanation": "La minería es un paso de KDD. KDD también incluye preparación, evaluación y presentación del conocimiento.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Conceptos básicos; fundamentos del aprendizaje automático"
+        }
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadero"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "answer": [
+        "false"
+      ]
+    },
+    {
+      "id": "EXTRA-004",
+      "topic": "fundamentos",
+      "type": "matching",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Uní cada enfoque con la descripción correspondiente.",
+      "explanation": "IA es el campo más amplio; ML es un área de IA; minería de datos es una etapa del proceso KDD.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Conceptos básicos; fundamentos del aprendizaje automático"
+        }
+      ],
+      "pairs": [
+        {
+          "id": "0",
+          "left": "IA simbólica",
+          "right": "Conocimiento explícito mediante reglas y símbolos"
+        },
+        {
+          "id": "1",
+          "left": "IA subsimbólica",
+          "right": "Aprende representaciones y patrones, por ejemplo con redes neuronales"
+        },
+        {
+          "id": "2",
+          "left": "Aprendizaje automático",
+          "right": "Mejora el desempeño con la experiencia"
+        },
+        {
+          "id": "3",
+          "left": "Minería de datos",
+          "right": "Descubre patrones útiles y no triviales en datos"
+        }
+      ]
+    },
+    {
+      "id": "EXTRA-005",
+      "topic": "estadistica",
+      "type": "numeric",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Calculá la media aritmética de [3, 7, 8, 10].",
+      "explanation": "Suma = 28; n = 4. Media = 7.",
+      "references": [
+        {
+          "source": "parcial",
+          "locator": "p. 2, pregunta 3; variante numérica"
+        }
+      ],
+      "answer": 7.0,
+      "tolerance": 0.001
+    },
+    {
+      "id": "EXTRA-006",
+      "topic": "proyectos",
+      "type": "essay",
+      "difficulty": "intermedia",
+      "origin": "ampliacion",
+      "points": 1,
+      "prompt": "Diseñá un ciclo DDS para investigar deserción estudiantil. Indicá pregunta, artefacto, observación y decisión posterior.",
+      "explanation": "Ejemplo: preguntar si variables socioeconómicas aportan señal; crear un modelo baseline; comparar con validación adecuada; analizar errores y utilidad con el PO. No asumir que correlación implica causalidad.",
+      "references": [
+        {
+          "source": "gestion",
+          "locator": "Proceso KDD; CRISP-DM; Data Driven Scrum"
+        }
+      ],
+      "rubric": [
+        "Definir una pregunta concreta vinculada con deserción.",
+        "Crear un artefacto mínimo pertinente.",
+        "Definir evidencia de observación y cómo obtenerla.",
+        "Analizar resultados para decidir el próximo paso."
+      ]
+    }
+  ],
+  "notes": [
+    "Paquete de ejemplo: ilustra los seis tipos. Las consignas duplican ejemplos del banco para mostrar el formato; adaptalas antes de importar para evitar repetir contenido."
+  ]
+}
